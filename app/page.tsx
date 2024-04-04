@@ -1,11 +1,15 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Hero from "@/components/hero/Index";
+import Home from "@/components/home/Index";
+import Graduates from "@/components/homeContend/Graduate";
 
-export default function Home() {
+export default function Main() {
   return (
     <main>
-       <Hero/>
+    <div>
+    <Home/>
+    <Graduates/>
+    </div>
     </main>
   );
 }
