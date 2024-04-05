@@ -30,7 +30,7 @@ const texts = [
 
 const tittles = [
   { tittle1: "Lorem Ipsum", color1: "from-[#00dbb8] to-[#0079bb]" },
-  { tittle2: "Lorem Ipsum", color2: "text-customPurple", tittle3: "Lorem Ipsum", color3: "text-customPink"},
+  { tittle2: "Lorem Ipsum", color2: "from-[#00dbb8] to-[#0079bb]", tittle3: "Lorem Ipsum", color3: "text-secondaryCian"},
   /* { tittle4: "DIPLOMADOS, CURSOS PROMÁS", color4: "from-green-700 to-blue-500" } */
 ];
 
@@ -75,7 +75,7 @@ const Home = () => {
   };
 
   return (
-    <motion.div   style={{ backgroundImage: `url(${images[index].src})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} className="relative zoomInVariants" >
+    <div className="relative carousel" >
       <motion.div
         initial="hidden"
         animate="visible"
@@ -186,7 +186,7 @@ const Home = () => {
           <BiChevronRight className="text-xl"/>
         </button>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

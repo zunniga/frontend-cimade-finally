@@ -28,7 +28,7 @@ function Navbar() {
               {/* LOGO */}
               <Link href="/">
                 <Image
-                  src="/logo_binex.png"
+                  src="/img/logo/logobinex.png"
                   width={800}
                   height={800}
                   alt="binex_logo"
