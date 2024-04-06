@@ -13,7 +13,7 @@ function Navbar() {
   const [navbar, setNavbar] = useState(false);
   return (
     <div className=''>
-     <nav className="w-full top-0 left-0 right-0 fixed z-50 backdrop-filter backdrop-blur-lg">
+     <nav className="w-full top-0 left-0 right-0 fixed z-50 ">
 
       <div className='max-w-screen-xl flex flex-wrap  items-center justify-center mx-auto p-0.5 backdrop-blur-md'>
         <div className='md:text-right text-center font-semibold w-full border-b border-[#00dbb8] py-1'>
@@ -22,7 +22,8 @@ function Navbar() {
             className='hover:underline mr-3 text-white hover:text-white'>Aula Virtual</Link>
         </div>
       </div>
-        <div className="justify-between px-2 lg:px-0 mx-auto lg:max-w-7xl md:items-center md:flex backdrop-blur-md">
+
+        <div className="justify-between px-2 lg:px-0 mx-auto lg:max-w-7xl md:items-center md:flex bg-trans ">
           <div>
             <div className="items-center inline-flex justify-between py-3 md:py- lg:py- md:block">
               {/* LOGO */}
@@ -99,6 +100,7 @@ function Navbar() {
             </div>
           </div>
         </div>
+
       </nav>
     </div>
   );

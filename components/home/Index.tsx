@@ -1,86 +1,79 @@
 "use client"
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import {
-  fadeIn,
-  slideInFromLeft,
-  slideInFromRight,
-  slideInFromTop,
-  zoomInVariants,
-
-} from "@/components/utils/motion";
-import Image from "next/image";
 import { FaFacebookF, FaInstagram, FaTiktok, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
-import Link from "next/link";
+import { fadeIn, slideInFromLeft, slideInFromTop, zoomInVariants } from "@/components/utils/motion";
 import "./Transition.css";
 
-
-const images = [
-  { src: "/img/banners/hero-1.jpg" },
-  { src: "/img/banners/hero-2.jpg" },
- /*  { src: "/IMAGEN.png", variants: slideInFromRight(1) } */
+const videos = [
+  { src: "/img/video/second_video.mp4" },
+  { src: "/img/video/tree_video.mp4" },
 ];
 
 const texts = [
   "Tu puerta abierta al conocimiento en vivo, desde donde estes...",
   "Con nuestros Cursos y Diplomados de especialización...",
-  /* "Unete a nosotros para alcanzar nuevas metas..m" */
 ];
 
 const tittles = [
   { tittle1: "Lorem Ipsum", color1: "from-[#00dbb8] to-[#0079bb]" },
-  { tittle2: "Lorem Ipsum", color2: "from-[#00dbb8] to-[#0079bb]", tittle3: "Lorem Ipsum", color3: "text-secondaryCian"},
-  /* { tittle4: "DIPLOMADOS, CURSOS PROMÁS", color4: "from-green-700 to-blue-500" } */
+  { tittle2: "Lorem Ipsum", color2: "text-customPurple", tittle3: "Lorem Ipsum", color3: "text-customPink"},
 ];
 
 const icons = [
   {img1: <FaFacebookF />, img2: <FaInstagram />, img3: <FaTiktok />, img4: <FaWhatsapp />, img5: <FaYoutube />},
   {img1: <FaFacebookF />, img2: <FaInstagram />, img3: <FaTiktok />, img4: <FaWhatsapp />, img5: <FaYoutube />},
-  /* {img1: <FaFacebookF />, img2: <FaInstagram />, img3: <FaTiktok />, img4: <FaWhatsapp />, img5: <FaYoutube />}, */
-
-]
+];
 
 const buttons = [
   "Contacto",
   "Informes",
-  /* "¡Inscribete!" */
-]
+];
 
 const Home = () => {
-
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       if (!document.hidden) {
         setIndex((prevIndex) =>
-          prevIndex === images.length - 1 ? 0 : prevIndex + 1
+          prevIndex === videos.length - 1 ? 0 : prevIndex + 1
         );
-      };
+      }
     }, 10000);
     return () => clearInterval(interval);
   }, []);
 
   const nextSlide = () => {
     setIndex((prevIndex) =>
-      prevIndex === tittles.length - 1 ? 0 : prevIndex + 1
+      prevIndex === videos.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   const prevSlide = () => {
     setIndex((prevIndex) =>
-      prevIndex === 0 ? tittles.length - 1 : prevIndex - 1
+      prevIndex === 0 ? videos.length - 1 : prevIndex - 1
     );
   };
 
   return (
-    <div className="relative carousel" >
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        className="relative z-10 flex flex-col-reverse md:flex-row max-w-screen-xl mx-auto items-center justify-between h-screen w-full">
-
+    <motion.div className="relative zoomInVariants">
+      {videos.map((video, i) => (
+        i === index && (
+          <video
+            key={i}
+            autoPlay
+            loop
+            muted
+            style={{ position: 'fixed', width: '100%', height: '100%', objectFit: 'cover', zIndex: -1 }}
+          >
+            <source src={video.src} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        )
+      ))}
+      <div className="relative z-10 flex flex-col-reverse md:flex-row max-w-screen-xl mx-auto items-center justify-between h-screen w-full">
         <div className="mb-10 lg:mb-0 p-2 md:mt-20">
           {icons.map((icon, i) => (
             i === index && (
@@ -92,11 +85,10 @@ const Home = () => {
                 variants={slideInFromTop}
                 className="py-1 lg:text-left text-center px-1 opacity-[0.9]"
               >
-                
+                {/* Iconos */}
               </motion.div>
             )
           ))}
-
           {tittles.map((tittle, i) => (
             i === index && (
               <React.Fragment key={`tittles-${i}`}>
@@ -142,7 +134,6 @@ const Home = () => {
               </React.Fragment>
             )
           ))}
-
           {texts.map((text, i) => (
             i === index && (
               <motion.p
@@ -157,7 +148,6 @@ const Home = () => {
               </motion.p>
             )
           ))}
-
           {buttons.map((button, i) => ( i === index && (
             <motion.a
               key={i}
@@ -171,9 +161,7 @@ const Home = () => {
             </motion.a>
           )))}
         </div>
-
-       
-      </motion.div>
+      </div>
       <div className="flex justify-center">
         <button
           onClick={prevSlide}
@@ -186,7 +174,7 @@ const Home = () => {
           <BiChevronRight className="text-xl"/>
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
