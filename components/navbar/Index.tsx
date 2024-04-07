@@ -13,7 +13,7 @@ function Navbar() {
   const [navbar, setNavbar] = useState(false);
   return (
     <div className=''>
-     <nav className="w-full top-0 left-0 right-0 fixed z-50 ">
+     <nav className="w-full top-0 left-0 right-0  z-50 absolute">
 
       <div className='max-w-screen-xl flex flex-wrap  items-center justify-center mx-auto p-0.5 backdrop-blur-md'>
         <div className='md:text-right text-center font-semibold w-full border-b border-[#00dbb8] py-1'>

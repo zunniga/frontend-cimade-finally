@@ -98,8 +98,8 @@ const ServiceArea = () => {
 
     return (   
         <>
-            <div className="tp-service-funfact-box flex flex-col md:flex-row justify-center items-center mb-20 "> {/* Aplicamos flexbox para disposición horizontal y centrado vertical y horizontal */}
-   <section className="tp-fun-fact-area pt-60 pb-65 p-relative " style={{ backdropFilter: 'blur(8px)' }}>
+            <div className="tp-service-funfact-box flex flex-col md:flex-row justify-center items-center  opacity-80 bg-primaryBlue/35 pb-32 "> {/* Aplicamos flexbox para disposición horizontal y centrado vertical y horizontal */}
+   <section className="tp-fun-fact-area pt-60 pb-65 p-relative " >
       <div className="container container-1400">
 
          <div className="tp-fun-fact-shape">
@@ -124,8 +124,9 @@ const ServiceArea = () => {
                   )} 
                </div>
             </div>
+
             <div className="md:w-1/3">
-               <div className="tp-fun-fact-thumb p-relative">
+               <div className="tp-fun-fact-thumb p-relative animate-[wiggle_1s_ease-in-out_infinite] ">
                   <Image id="reload" src={reload_img} alt="scroll" />
                </div>
             </div>

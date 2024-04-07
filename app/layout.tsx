@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 //import Navbar from "@/components/navbar/Index";
 import Navbar from "@/components/navbar/Index";
+import Footer from "@/components/footer/Index"
 
 //import StarsCanvas from "@/components/share/StartBackground";
 
@@ -23,7 +24,7 @@ export default function RootLayout({
       <body className={`${inter.className} `}>
         <Navbar />
           {children}
- 
+          <Footer/>
       </body>
     </html>
   );

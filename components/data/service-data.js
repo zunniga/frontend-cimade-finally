@@ -1,9 +1,9 @@
 
 // import img here 
-import service_img_1 from "@/public/wherer/services-1.jpg";
-import service_img_2 from "@/public/wherer/services-2.jpg";
-import service_img_3 from "@/public/wherer/services-3.jpg";
-import service_img_4 from "@/public/wherer/services-4.jpg";
+import service_img_1 from "@/public/img/graduate/img-2.jpg";
+import service_img_2 from "@/public/img/graduate/img-2.jpg";
+import service_img_3 from "@/public/img/graduate/img-2.jpg";
+import service_img_4 from "@/public/img/graduate/img-2.jpg";
 
 const service_data = [
     {

@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/hero/Index.jsx", "components/presentation/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/hero/Index.jsx", "components/presentation/page.jsx", "components/navbar/Index.tsx"],
   "exclude": ["node_modules"]
 }

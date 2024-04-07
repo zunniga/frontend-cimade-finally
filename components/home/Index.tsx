@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { FaFacebookF, FaInstagram, FaTiktok, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import { fadeIn, slideInFromLeft, slideInFromTop, zoomInVariants } from "@/components/utils/motion";
-import "./Transition.css";
+
 
 const videos = [
   { src: "/img/video/second_video.mp4" },
@@ -58,10 +58,12 @@ const Home = () => {
   };
 
   return (
-    <motion.div className="relative zoomInVariants">
+     <div>
+     
+    <motion.div className="relative zoomInVariants    ">
       {videos.map((video, i) => (
         i === index && (
-          <video
+          <video className=" opacity-25 bg-primaryBlue "
             key={i}
             autoPlay
             loop
@@ -71,9 +73,15 @@ const Home = () => {
             <source src={video.src} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+
+          
         )
       ))}
-      <div className="relative z-10 flex flex-col-reverse md:flex-row max-w-screen-xl mx-auto items-center justify-between h-screen w-full">
+
+
+
+
+      <div className="relative z-10 flex flex-col-reverse md:flex-row max-w-screen-xl mx-auto items-center justify-between h-screen w-full  ">
         <div className="mb-10 lg:mb-0 p-2 md:mt-20">
           {icons.map((icon, i) => (
             i === index && (
@@ -175,6 +183,11 @@ const Home = () => {
         </button>
       </div>
     </motion.div>
+
+     </div>
+
+
+    
   );
 };
 
