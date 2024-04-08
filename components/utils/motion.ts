@@ -100,11 +100,3 @@ export function slideInFromLeft(delay: number) {
       },
     },
   });
-
-  export const zoomInVariants = {
-  hidden: { scale: 0.8 }, // Escala inicial
-  visible: { 
-    scale: 1, // Escala final
-    transition: { duration: 0.5 } // Duración de la transición
-  }
-};

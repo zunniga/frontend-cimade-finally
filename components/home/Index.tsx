@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaFacebookF, FaInstagram, FaTiktok, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
-import { fadeIn, slideInFromLeft, slideInFromTop, zoomInVariants } from "@/components/utils/motion";
+import { fadeIn, slideInFromLeft, slideInFromTop } from "@/components/utils/motion";
 
 
 const videos = [
@@ -60,10 +60,10 @@ const Home = () => {
   return (
      <div>
      
-    <motion.div className="relative zoomInVariants    ">
+    <motion.div className="relative    ">
       {videos.map((video, i) => (
         i === index && (
-          <video className=" opacity-25 bg-primaryBlue "
+          <video className=" opacity-30 bg-black/50 "
             key={i}
             autoPlay
             loop

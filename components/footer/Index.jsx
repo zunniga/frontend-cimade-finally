@@ -6,10 +6,10 @@ import { FaFacebookF, FaInstagram, FaTiktok, FaWhatsapp, FaYoutube } from "react
 
 const Footer = () => {
   return (
-    <div className=''>
+ 
     <footer
-      className="bg-transparent bg-clip bg-gradient-to-b from-primaryBlue to-secondaryCian text-center text-gray-100 lg:text-left">
-      <div className="border-b-2 border-white p-4">
+      className="bg-clip bg-gradient-to-b from-primaryBlue/20 to-primaryBlue/80   text-center text-gray-100 lg:text-left ">
+      <div className="border-b-2 border-white p-1 l  pt-5 pb-5">
         <div className="container mx-auto px-10">
           <div className="flex items-center justify-center lg:justify-between">
             <div className="mr-12 hidden lg:block">
@@ -144,7 +144,7 @@ const Footer = () => {
                   <path
                     d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
                 </svg>
-                capacitaciones@promas.edu.pe
+                capacitaciones@binex.edu.pe
               </p>
               <p className="mb-4 flex items-center justify-center md:justify-start">
                 <svg
@@ -186,7 +186,7 @@ const Footer = () => {
       </div>
 
     </footer>
-</div>
+
   )
 }
 
