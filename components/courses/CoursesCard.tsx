@@ -26,7 +26,7 @@ const GraduateCard: FC<InsightCardProps> = ({ imgUrl, title, subtitle, index }) 
       alt="planet-01"
       width={800}
       height={200}
-      className="w-auto rounded-3xl p-2 object-cover"
+      className=" rounded-3xl p-2 object-cover"
       priority={true}
     />
     </div>

@@ -89,6 +89,15 @@
   .tp-fun-fact-wrapper-box {
     margin-top: -40px;
   }
+  @media screen and (max-width: 767px) {
+    .tp-fun-fact-wrapper-box {
+      margin-top: -40px;
+      margin-left: 80px;
+      margin-right: auto;
+      display: block;
+    }
+  }
+  
   @media only screen and (min-width: 1400px) and (max-width: 1599px) {
     .tp-fun-fact-wrapper-box {
       margin-left: 60px;
@@ -100,10 +109,11 @@
     line-height: 49px;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgba(255, 255, 255, 0.5);
+    -webkit-text-stroke-color: #ffffff;
     margin-bottom: 30px;
   }
   .tp-fun-fact-wrapper p {
+   
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 0.25em;

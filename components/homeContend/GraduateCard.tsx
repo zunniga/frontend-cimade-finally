@@ -16,7 +16,7 @@ const GraduateCard: FC<InsightCardProps> = ({ imgUrl, title, subtitle, index }) 
   <motion.div
     variants={fadeIn('up', 'spring', index * 0.5, 1)}
     initial="animate"
-    className="flex md:flex-col flex-col gap-4 px-2 py-2 mb-8 mx-auto rounded-2xl bg-secondaryCian hover:cursor-pointer "
+    className="flex md:flex-col flex-col gap-4 px-2 py-2 mb-8 mx-auto rounded-2xl bg-black hover:cursor-pointer "
     whileHover={{ scale: 1.1, backgroundColor: '#1DDAB8' }}
     whileTap={{ scale: 1 }}
   >
@@ -24,9 +24,9 @@ const GraduateCard: FC<InsightCardProps> = ({ imgUrl, title, subtitle, index }) 
     <Image
       src={imgUrl}
       alt="planet-01"
-      width={800}
+      width={900}
       height={200}
-      className="w-auto rounded-3xl p-2 object-cover"
+      className=" rounded-3xl p-2 object-cover"
       priority={true}
     />
     </div>

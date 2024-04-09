@@ -32,17 +32,17 @@ const Index = () => {
 
     <div className="mx-auto ">
      
-       <motion.div className="container  mx-auto md:px-6 ">
+       <motion.div className="container mx-auto md:px-6 ">
       
       <section className="">
         <div className="relative  lg:h-[350px] md:h-[350px] h-[200px] overflow-hidden bg-cover bg-center bg-no-repeat">
-          <div className=" text-center  text-white lg:text-7xl md:text-6xl text-5xl font-extralight lg:mt-20   mt-0">
+          <div className=" text-center  text-white lg:text-7xl md:text-6xl text-5xl font-extralight lg:mt-32   mt-10">
             CONTÁCTANOS
           </div>
         </div>
 
-        <div className=" container px-6 md:px-12 mb-20">
-          <div className="bg-gradient-to-b from-primaryBlue/10 to-secondaryCian/40 block rounded-lg  px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]">
+        <div className=" container px-6 md:px-12 mb-20"> bg-gradient-to-b  via-[] 
+          <div className="bg-gradient-to-b  from-testBlue/80 to-testCian/50 block rounded-lg  px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]">
             <div className="flex flex-wrap">
               <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
                 <form>

@@ -8,7 +8,7 @@ const Footer = () => {
   return (
  
     <footer
-      className="bg-clip bg-gradient-to-b from-primaryBlue/20 to-primaryBlue/80   text-center text-gray-100 lg:text-left ">
+      className="bg-clip bg-gradient-to-b from-primaryBlue/10 to-testCian   text-center text-gray-100 lg:text-left ">
       <div className="border-b-2 border-white p-1 l  pt-5 pb-5">
         <div className="container mx-auto px-10">
           <div className="flex items-center justify-center lg:justify-between">
@@ -178,7 +178,7 @@ const Footer = () => {
       </div>
 
       <div className="p-6 text-center">
-        <span>© 2023 Copyright:</span>
+        <span>© 2024 Copyright:</span>
         <Link
           className="font-semibold text-neutral-300"
           href="/"

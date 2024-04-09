@@ -15,7 +15,7 @@ import GreenRightArrow from '@/svg/green-right-arrow';
 import fun_fact_shape_1 from "@/public/world/shape-1.png";
 import fun_fact_shape_2 from "@/public/world/shape-2.png";
 import fun_fact_shape_3 from "@/public/world/shape-3.png";
-import fun_fact_shape_4 from "@/public/world/shape-4.png";
+
 
 
 import reload_img from "@/public/img/banners/planeta.png";
@@ -24,27 +24,27 @@ import reload_img from "@/public/img/banners/planeta.png";
   const counter_content = [
    {
       id: 1, 
-      count: 10,
-      info: "Experience",
+      count: 2000,
+      info: "EGRESADOS",
       cls: "",
       cls_2: "purecounter",
       icon: "+",
    },
    {
       id: 2, 
-      count: 255,
-      info: "square area",
+      count: 70,
+      info: "DIPLOMADOS",
       cls: "purecounter",
       cls_2: "",
-      icon: "",
+      icon: "+",
    },
    {
       id: 3, 
-      count: 310,
-      info: "square area",
+      count: 700,
+      info: "CURSOS",
       cls: "purecounter",
       cls_2: "",
-      icon: "",
+      icon: "+",
    },
   ]
 const ServiceArea = () => {
@@ -98,7 +98,7 @@ const ServiceArea = () => {
 
     return (   
         <>
-            <div className="tp-service-funfact-box flex flex-col md:flex-row justify-center items-center   bg-gradient-to-b from-blue-950 via-secondaryCian/40 to-blue-950 pb-32 "> {/* Aplicamos flexbox para disposición horizontal y centrado vertical y horizontal */}
+            <div className="tp-service-funfact-box flex flex-col md:flex-row justify-center items-center  bg-gradient-to-b from-testBlue via-testCian/50 to-testBlue pb- "> {/* Aplicamos flexbox para disposición horizontal y centrado vertical y horizontal */}
    <section className="tp-fun-fact-area pt-60 pb-65 p-relative " >
       <div className="container container-1400">
 
@@ -106,16 +106,16 @@ const ServiceArea = () => {
             <Image className="shape-1" src={fun_fact_shape_1} alt="theme-pure" />
             <Image className="shape-2" src={fun_fact_shape_2} alt="theme-pure" />
             <Image className="shape-3" src={fun_fact_shape_3} alt="theme-pure" />
-            <Image className="shape-4" src={fun_fact_shape_4} alt="theme-pure" />
+           
          </div>
 
          <div className="md:flex justify-center"> {/* Aplicamos flexbox y centrado horizontal para elementos internos */}
             <div className="md:w-1/3">
-               <div className="tp-fun-fact-wrapper-box">
+               <div className="tp-fun-fact-wrapper-box ">
                   {counter_content.map((item, i) => 
                      <div key={i} className="tp-fun-fact-wrapper">
                         <h3 className={`counter-title ${item.cls}`}> 
-                           <span data-purecounter-duration="4" className="purecounter">
+                           <span data-purecounter-duration="5" className="purecounter">
                               <Count number={item.count} text={item.icon} />
                            </span>
                         </h3>
@@ -134,31 +134,19 @@ const ServiceArea = () => {
             <div className="md:w-1/3">
                <div className="tp-fun-fact-content">
                   <div className="tp-fun-fact-title-wrapper">
-                     <span className="tp-section-title__pre">
-                        service <span className="title-pre-color">IT Solutions</span> 
-                        <AngleArrow />
-                     </span>
-                     <h3 className="tp-section-title">UN MUNDO COMPLICADO Y DESAFIANTE
+                     
+                     <h3 className="mb-6 text-white text-5xl  font-extrabold text-center">EN UN MUNDO COMPLEJO Y DESAFIANTE
                         <span className="title-left-shape"> 
                      
                         </span>
                      </h3>
-                     <p>
-                        Our company provides a full range of services for the construction of <br /> private houses and cottages since 19
+                     <p className='text-center'>
+                        
+                        La importancia de la formación especializada se hace cada vez más evidente.<br />  
+                        Las demandas de la sociedad y la industria requieren profesionales altamente capacitados y actualizados en las últimas tecnologías y metodologías.
                      </p>
-                     <ul>
-                        <li>
-                           <span> <GreenRightArrow /></span>
-                           series of manual and semi-manual activities.
-                        </li>
-                        <li>
-                           <span><GreenRightArrow /> </span>
-                           construction is different from other industries.
-                        </li>
-                     </ul>
-                     <div className="tp-fun-fact-btn">
-                        <Link className="tp-btn" href="/service-details">Tell us How Can We Help</Link>
-                     </div>
+                     
+                    
                   </div>
                </div>
             </div>

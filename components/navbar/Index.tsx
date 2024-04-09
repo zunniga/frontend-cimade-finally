@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { FaUserCog } from "react-icons/fa";
+
 import {
   slideInFromLeft,
   slideInFromRight,
@@ -38,16 +39,16 @@ function Navbar() {
                 />
               </Link>
               {/* HAMBURGER BUTTON FOR MOBILE */}
-              <div className="md:hidden ml-44">
+              <div className="md:hidden ml-44 ">
                 <button
                   className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
-                    <Image src="/close.svg" width={40} height={40} alt="logo" className="text-white" priority={true}/>
+                    <Image src="/icons/close.png" width={30} height={30} alt="logo"  className="text-white" priority={true}/>
                   ) : (
                     <Image
-                      src="/hamburger-menu.svg"
+                      src="/icons/menu.png"
                       width={30}
                       height={30}
                       alt="logo"
@@ -59,14 +60,14 @@ function Navbar() {
               </div>
             </div>
           </div>
-          <div>
-            <div
-              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                navbar ? 'p-12 md:p-0 block' : 'hidden'
-              }`}
-            >
-              <ul className="h-screen md:h-12 lg:text-sm md:text-sm text-xl items-center justify-center md:flex  ">
-                <li className=" font-bold text-gray-100 hover:text-white lg:mb-0 md:mb-0 mb-6 py-1 px-6 text-center md:border-b-0 hover:bg-secondaryCian rounded transition-transform transform hover:scale-125">
+
+
+
+  {/* Contenido para dispositivos de escritorio */}
+  <div className={`hidden md:block ${navbar ? 'block' : 'hidden'}`}>
+    <div className="flex-1 justify-self-center rounded-lg pb-3 mt-2">
+      <ul className="h-screen md:h-12 lg:text-sm md:text-sm text-xl items-center justify-center md:flex  ">
+      <li className=" font-bold text-gray-100 hover:text-white lg:mb-0 md:mb-0 mb-6 py-1 px-6 text-center md:border-b-0 hover:bg-secondaryCian rounded transition-transform transform hover:scale-125">
                   <Link href="/" onClick={() => setNavbar(!navbar)}>
                     Inicio
                   </Link>
@@ -96,11 +97,71 @@ function Navbar() {
                     <FaUserCog className='md:text-xl text-4xl'/>
                   </Link>
                 </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+       
+      </ul>
+    </div>
+  </div>
+</div>
 
+
+              
+  <div>
+  {/* Contenido para dispositivos móviles */}
+  <div className={`md:hidden ${navbar ? 'block' : 'hidden'}`} style={{ backgroundColor: '#000000 ' }}>
+    <div className="flex-1 justify-self-center rounded-lg pb-3 mt-2 ">
+      <ul className="h-screen md:h-12 lg:text-sm md:text-sm text-xl items-center justify-center md:flex  ">
+      <ul className=''>
+      <li className=" font-bold text-gray-100  hover:text-white lg:mb-0 md:mb-0 mb-6 py-1 px-6 text-center md:border-b-0 hover:bg-secondaryCian rounded transition-transform transform hover:scale-125">
+                  <Link href="/" onClick={() => setNavbar(!navbar)}>
+                    Inicio
+                  </Link>
+                </li>
+                <li className=" font-bold text-gray-100 hover:text-white lg:mb-0 md:mb-0 mb-6 py-1 px-6 text-center md:border-b-0 hover:bg-secondaryCian rounded transition-transform transform hover:scale-125">
+                  <Link href="/certificate" onClick={() => setNavbar(!navbar)}>
+                    Certificado
+                  </Link>
+                </li>
+                <li className=" font-bold text-gray-100 hover:text-white lg:mb-0 md:mb-0 mb-6 py-1 px-6 text-center md:border-b-0 hover:bg-secondaryCian rounded transition-transform transform hover:scale-125">
+                  <Link href="/graduate" onClick={() => setNavbar(!navbar)}>
+                    Diplomados
+                  </Link>
+                </li>
+                <li className="font-bold text-gray-100 hover:text-white lg:mb-0 md:mb-0 mb-6 py-1 px-6 text-center md:border-b-0 hover:bg-secondaryCian rounded transition-transform transform hover:scale-125">
+                  <Link href="/about" onClick={() => setNavbar(!navbar)}>
+                    Nosotros
+                  </Link>
+                </li>
+                <li className="font-bold text-gray-100 hover:text-white lg:mb-0 md:mb-0 mb-4 py-1 px-6 text-center md:border-b-0 hover:bg-secondaryCian rounded transition-transform transform hover:scale-125">
+                  <Link href="/" onClick={() => setNavbar(!navbar)}>
+                    ¡Inscribete!
+                  </Link>
+                </li>
+                <li className="lg:pl-40 flex  justify-center items-center hover:text-primaryBlue md:mt-0 mt-20">
+                  <Link href="/login" className="bg-secondaryCian py-1 px-4 rounded-xl text-white hover:bg-gray-100 hover:text-primaryBlue hover:scale-125 duration-300">
+                    <FaUserCog className='md:text-xl text-4xl'/>
+                  </Link>
+                </li>
+      </ul>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
       </nav>
     </div>
   );

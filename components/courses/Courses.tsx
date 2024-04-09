@@ -11,7 +11,7 @@ import { TitleText, TypingText } from '../share/CustomText'
 const variants = staggerContainer("0.1s", "0.1s");
 
 const Graduate: React.FC = () => (
-  <section className='bg-gradient-to-b from-blue-950 via-secondaryCian/40 to-blue-950'>
+  <section className='bg-gradient-to-b from-[#0079bb] via-[#00dbb8] to-[#0079bb]'>
   <div className={`${styles.paddings} relative z-10 max-w-screen-xl mx-auto`}>
     <motion.div
       variants={variants}

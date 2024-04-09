@@ -35,6 +35,9 @@ module.exports = {
       colors: {
         primaryBlue: '#0079bb',
         secondaryCian: '#00dbb8',
+        testBlue : '#0079bb',
+        testCian : '#00dbb8'
+       
 
       },
     },
