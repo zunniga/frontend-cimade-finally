@@ -1,6 +1,6 @@
 import React, { useState, FormEvent} from 'react'
 import { URL } from '@/components/utils/format/tokenConfig';
-import axios from 'axios'
+import axios from 'axios';
 import { SearchCodeProps, StudentCode } from '../../interface/interface';
 import Modal from '../share/Modal';
 import Image from 'next/image';

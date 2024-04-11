@@ -17,7 +17,7 @@ import {
 
 const videos = [
   { src: "/img/video/second_video.mp4" },
-  { src: "/img/video/tree_video.mp4" },
+  { src: "/img/video/four.webm" },
 ];
 
 const texts = [
