@@ -7,7 +7,6 @@ import { RiLockPasswordLine } from "react-icons/ri";
 import { useForm } from "react-hook-form";
 import PasswordInputs from "@/components/utils/format/passwordHash";
 
-
 type ResErrors = {
   message: string;
   errorContent: string;
@@ -92,72 +91,70 @@ const Login: React.FC = () => {
     if (resErrors?.message === "La contraseña o gmail es incorrecta") {
       setResErrors(null);
     }
-  }, [resErrors?.message,form.email, form.password]);
+  }, [form.email, form.password]);
 
   return (
     <section
-      className="flex justify-center items-center h-screen bg-primaryceleste"
-      style={{ backgroundImage: "url('image/login.jpg')" }}
+      className="flex justify-center items-center h-screen bg-gradient-to-r from-testCian via-testCian to-testCian"
+      
     >
-      <div className="container p-4 lg:p-10">
-        <div className="">
-          <form className="form-login  rounded-lg shadow-lg p-8 max-w-sm mx-auto ">
-
-            <div className="text-center mb-4 ">
-              <Image
-                className="mx-auto w-24 lg:w-40"
-                src="/certificate/logo_blanco.png"
-                alt="logo"
-                width={120}
-                height={120}
-              />
-            </div>
-          
-            {resErrors?.message && (
-              <span className="text-gray-100 bg-red-600/50 w-full p-2 rounded-xl font-semibold text-sm">
+      <form className="form-login max-w-sm mx-auto bg-gradient-to-b from-testBlue/30 via-testCian to-testBlue/30 rounded-xl p-8">
+        <div className="text-center mb-4 ">
+          <Image
+            className="mx-auto w-24 lg:w-40"
+            src="/img/logo/logo_cert.png"
+            alt="logo"
+            width={120}
+            height={120}
+          />
+          {resErrors?.message && (
+              <span className="text-gray-100 bg-red-600/50 w-full mt-3 p-2 rounded-xl font-semibold text-sm">
                 {resErrors.message}
               </span>
             )}
 
-
-            <div className="relative ">
-              <div className="absolute top-1 left-1 bg-[#FFFFFF40] rounded-full p-2 flex items-center justify-center text-primaryceleste">
-                <MdOutlineMailLock />
-              </div>
-              <input
-                type="email"
-                placeholder="Email"
-                className="w-72 bg-[#FFFFFF40] py-2 px-12 text-white rounded-full focus:bg-[#00000050] focus:outline-none focus:ring-1 focus:ring-primaryceleste focus:drop-shadow-lg"
-                onChange={(event) => handleFormData(event, "email")}
-                onKeyDown={handleKeyDown}
-              />
-            </div>
-
-            <div className="relative">
-              <div className="absolute top-1 left-1 bg-[#FFFFFF40] rounded-full p-2 flex items-center justify-center text-primaryceleste">
-                <RiLockPasswordLine />
-              </div>
-              <PasswordInput
-                name="password"
-                register={register}
-                placeholder="Password"
-                onChange={(event) => handleFormData(event, "password")}
-                onKeyDown={(event) => handleKeyDown(event)}
-                
-              />
-            </div>
-
-            <button
-              type="button"
-              value="login"
-              className="bg-gradient-to-r from-primaryceleste to-primarygreen text- w-72 font-semibold rounded-full py-2 mb-4"
-              onClick={() => onSubmit()}
-            >
-              Iniciar sesión
-            </button>
-          </form>
         </div>
-      </div>
+        
+        <div className=" mb-5">
+          <div className="relative block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+            Correo electrónico
+          </div>
+          <input
+            type="email"
+            placeholder="Email"
+            className="w-72 bg-[#FFFFFF40] py-2 px-12 text-white rounded-full focus:bg-[#00000050] focus:outline-none focus:ring-1 focus:ring-primaryceleste focus:drop-shadow-lg"
+            onChange={(event) => handleFormData(event, "email")}
+            onKeyDown={handleKeyDown}
+          />
+        </div>
+
+        <div className="relative mb-5">
+          <label
+            htmlFor="password"
+            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >
+            Contraseña
+          </label>
+          <PasswordInput
+            name="password"
+            register={register}
+            placeholder="Password"
+            onChange={(event) => handleFormData(event, "password")}
+            onKeyDown={(event) => handleKeyDown(event)}
+          />
+        </div>
+       
+        <div className="flex justify-center">
+          <button
+            type="button"
+            value="login"
+            onClick={() => onSubmit()}
+            className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Iniciar Sesión
+          </button>
+        </div>
+      </form>
     </section>
   );
 };

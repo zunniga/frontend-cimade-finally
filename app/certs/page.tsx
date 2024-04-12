@@ -27,7 +27,7 @@ const Certificate: React.FC = () => {
       className="relative pt-48 pb-20 p-2 items-center justify-center bg-testBlue/50  "
     >
       <div className="absolute inset-0 bg-no-repeat bg-center blur-sm opacity-50">
-        <video className="w-full h-full object-cover " autoPlay loop muted>
+        <video className=" w-full h-full object-cover " autoPlay loop muted>
           <source src="/img/video/video_certificate.webm" type="video/mp4" />
           Tu navegador no soporta la etiqueta de video.
         </video>
@@ -36,18 +36,18 @@ const Certificate: React.FC = () => {
 
       <div className="max-w-screen-lg mx-auto  rounded-3xl shadow-2xl  text-center lg:mb-20 p-4 relative inset-0 backdrop-blur-xl bg-gradient-to-b from-testCian/15 via-testCian/70 to-testCian/15">
         <div className="mb-4 lg:mt-0 justify-center text-5xl font-extrabold tracking-tight text-gray-500">
-          <div className="flex justify-center mb-4 lg:gap-8 gap-8">
+          <div className="flex justify-center mb-4 lg:gap-8 gap-8 ">
             <Image
-              src={"/img/certificate/unp.png"}
-              className="lg:w-44 lg:h-48 w-32 h-32 object-contain lg:mt-8 mt-7"
+              src={"/img/logo/unp_cert.png"}
+              className="lg:w-56 lg:h-56 w-48 h-48 object-contain "
               width={800}
-              height={700}
+              height={800}
               alt="logo_promas"
               priority={true}
             />
             <Image
-              src={"/img/logo/logo_binexx.png"}
-              className="lg:w-28 lg:h-48 w-32 h-32 object-contain mt-6"
+              src={"/img/logo/logo_cert.png"}
+              className="lg:w-56 lg:h-56 w-48 h-48 object-contain "
               width={800}
               height={800}
               alt="logo_promas"

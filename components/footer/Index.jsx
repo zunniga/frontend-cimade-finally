@@ -8,7 +8,7 @@ const Footer = () => {
   return (
  
     <footer
-      className="bg-clip bg-gradient-to-b from-primaryBlue/10 to-testCian   text-center text-gray-100 lg:text-left ">
+      className="bg-clip  bg-gradient-to-b from-testCian/15 via-testCian/70 to-testCian  text-center text-gray-100 lg:text-left ">
       <div className="border-b-2 border-white p-1 l  pt-5 pb-5">
         <div className="container mx-auto px-10">
           <div className="flex items-center justify-center lg:justify-between">
