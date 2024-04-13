@@ -16,19 +16,19 @@ const Footer = () => {
               <span>Siguenos en nuestras redes sociales:</span>
             </div>
             <div className="flex justify-center">
-              <Link href="https://www.facebook.com/people/Corporaci%C3%B3n-Prom%C3%A1s/61552473052389/" target="_blank"
+              <Link href="https://web.facebook.com/BinexEdu" target="_blank"
                 className="mr-5 text-gray-100 hover:scale-150 ease-in duration-300 border border-white rounded-full p-2">
                 <FaFacebookF className='text-2xl' />
               </Link>
-              <Link href="https://www.instagram.com/corporacion.promas/" target="_blank"
+              <Link href="https://www.instagram.com/binex.ec/" target="_blank"
                 className="mr-5 text-gray-100 hover:scale-150 ease-in duration-300 border border-white rounded-full p-2">
                 <FaInstagram className='text-2xl' />
               </Link>
-              <Link href="https://www.tiktok.com/@promas.corp" target="_blank"
+              <Link href="https://www.tiktok.com/@binex.ec" target="_blank"
                 className="mr-5 text-gray-100 hover:scale-150 ease-in duration-300 border border-white rounded-full p-2">
                 <FaTiktok className='text-2xl' />
               </Link>
-              <Link href="https://wa.me/51984040264?text=Hola,%20deseo%20más%20información%20sobre%20los%20diplomados" target="_blank"
+              <Link href="https://wa.me/51921814045?text=Hola,%20deseo%20más%20información%20sobre%20los%20diplomados" target="_blank"
                 className="mr-5 text-gray-100 hover:scale-150 ease-in duration-300 border border-white rounded-full p-2">
                 <FaWhatsapp className='text-2xl' />
               </Link>

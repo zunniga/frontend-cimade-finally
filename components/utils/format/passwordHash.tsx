@@ -63,7 +63,7 @@ const PasswordInput: React.FC<PasswordInputProps> = ({ name, register, placehold
         {...register(name)}
         onChange={onChange}
         onKeyDown={onKeyDown}
-        className="w-72 bg-[#FFFFFF30] py-2 px-12 text-white rounded-full focus:bg-[#00000050] focus:outline-none focus:ring-1 focus:ring-primaryceleste focus:drop-shadow-lg"
+        className="w-72 bg-slate-200 py-2 px-12 text-slate-900 rounded-full focus:bg-slate-200 focus:outline-none focus:ring-1 focus:ring-primaryceleste focus:drop-shadow-lg"
       />
     </div>
   );
@@ -82,7 +82,7 @@ const PasswordInputRegister: React.FC<PasswordInputRegisterProps> = ({ label, na
       <input
         type="password"
         {...register(name)} // Usa el register de RHF para manejar el campo
-        className="border rounded-lg p-2 w-full"
+        className="border rounded-lg p-2 w-full bg-slate-200 border-testCian"
       />
     </div>
   );

@@ -122,7 +122,7 @@ const Login: React.FC = () => {
           <input
             type="email"
             placeholder="Email"
-            className="w-72 bg-[#FFFFFF40] py-2 px-12 text-white rounded-full focus:bg-[#00000050] focus:outline-none focus:ring-1 focus:ring-primaryceleste focus:drop-shadow-lg"
+            className="w-72 bg-slate-200 py-2 px-12 text-slate-900 rounded-full focus:bg-white focus:outline-none focus:ring-1 focus:ring-primaryceleste focus:drop-shadow-lg"
             onChange={(event) => handleFormData(event, "email")}
             onKeyDown={handleKeyDown}
           />
@@ -131,7 +131,7 @@ const Login: React.FC = () => {
         <div className="relative mb-5">
           <label
             htmlFor="password"
-            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            className="block mb-2 text-sm font-medium  text-gray-900 dark:text-white"
           >
             Contraseña
           </label>
@@ -149,7 +149,7 @@ const Login: React.FC = () => {
             type="button"
             value="login"
             onClick={() => onSubmit()}
-            className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className=" text-white bg-testBlue/70 hover:bg-testBlue/30  focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center "
           >
             Iniciar Sesión
           </button>

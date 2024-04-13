@@ -14,6 +14,10 @@ import {
   slideInFromLeft,
   slideInFromTop,
 } from "@/components/utils/motion";
+import Link from "next/link";
+
+
+
 
 const videos = [
   { src: "/img/video/second_video.mp4" },
@@ -31,11 +35,13 @@ const tittles = [
     color1: "from-[#00dbb8] to-[#0079bb]",
   },
   {
-    tittle2: "Ingeniería de Calidad con Binex",
+    tittle2: "Comienza un programa online y certifícate",
     color2: "from-[#00dbb8] to-[#0079bb]",
   },
  
 ];
+
+
 
 const icons = [
   {
@@ -84,7 +90,7 @@ const Home = () => {
 
   return (
     <div>
-      <motion.div className="relative    ">
+      <motion.div className="relative">
         {videos.map(
           (video, i) =>
             i === index && (
@@ -108,8 +114,44 @@ const Home = () => {
             )
         )}
 
+
+
+
+
         <div className="flex flex-col justify-center items-center h-screen ">
-          <div className="mb-10 lg:mb-0 p-2 md:mt-20">
+          
+          <div className="mb-10 lg:mb-0 p-2 md:mt-20 ">
+          {icons.map((icon, i) => (
+          i === index && (
+        <motion.div
+          key={i}
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
+          variants={slideInFromTop}
+          className="py-1 lg:text-left text-center px-1 opacity-[0.9] "
+        >
+          <h1 className="text-gray-100 lg:text-2xl text-2xl text-center  lg:gap-6 gap-3 flex justify-center" >
+            <Link href='https://web.facebook.com/BinexEdu' target="_blank" className="border border-testCian/25 p-2 rounded-full transition-transform transform hover:scale-150 shadow-xl shadow-testCian/30">
+              {icon.img1}
+            </Link>
+            <Link href='https://www.instagram.com/binex.ec/' target="_blank" className="border border-testCian/25 p-2 rounded-full transition-transform transform hover:scale-150 shadow-xl shadow-testCian/30">
+              {icon.img2}
+            </Link>
+            <Link href='https://www.tiktok.com/@binex.ec' target="_blank" className="border border-testCian/25 p-2 rounded-full transition-transform transform hover:scale-150 shadow-xl shadow-testCian/30">
+              {icon.img3}
+            </Link>
+            <Link href='https://wa.me/51921814045?text=Hola,%20deseo%20más%20información%20sobre%20los%20diplomados' target="_blank" className="border border-testCian/25 p-2 rounded-full transition-transform transform hover:scale-150 shadow-xl shadow-testCian/30">
+              {icon.img4}
+            </Link>
+            <Link href='https://www.youtube.com/@binexeducacion/videos' className="border border-testCian/25 p-2 rounded-full transition-transform transform hover:scale-150 shadow-xl shadow-testCian/30" target="_blank">
+              {icon.img5}
+            </Link>
+          </h1>
+        </motion.div>
+        )
+        ))}
+
             {tittles.map(
               (tittle, i) =>
                 i === index && (
@@ -170,6 +212,7 @@ const Home = () => {
                   i === index && (
                     <motion.button
                       key={i}
+                      onClick={() => window.open('https://wa.me/51921814045?text=Hola,%20deseo%20más%20información%20sobre%20los%20diplomados', '_blank')}
                       initial="hidden"
                       animate="visible"
                       exit="hidden"

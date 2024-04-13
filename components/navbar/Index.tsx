@@ -16,16 +16,16 @@ function Navbar() {
     <div className="">
       <nav className="w-full top-0 left-0 right-0  z-50 absolute">
         <div className="max-w-screen-xl flex flex-wrap  items-center justify-center mx-auto p-0.5 backdrop-blur-md">
-          <div className="md:text-right text-center font-semibold w-full border-b border-[#00dbb8] py-1">
+          <div className="md:text-right text-center font-semibold w-full border-b border-[#00dbb8] py-1 mb-4">
             <Link
-              href="/certificate"
-              className="hover:underline mr-4 text-white hover:text-white"
+              href="/certs"
+              className=" mr-4 p-2 hover:bg-testCian/20 hover:text-white rounded-sm"
             >
               Verificar certificado
             </Link>
             <Link
               href="https://site2.q10.com/login?ReturnUrl=%2F&aplentId=0959465f-37c3-4032-803b-bbfc499af7a3"
-              className="hover:underline mr-3 text-white hover:text-white"
+              className=" mr-3 p-2 hover:bg-testCian/20 hover:text-white rounded-sm"
             >
               Aula Virtual
             </Link>
