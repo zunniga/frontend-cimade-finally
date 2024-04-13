@@ -121,7 +121,7 @@ const SearchName:React.FC<SearchNameProps> = ({ onSearchName }) => {
             value={queryValue}
             />
           <button type="submit"
-            className="botonCert bg-primaryblue absolute end-1.5 bottom-3 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-1.5">
+            className=" bg-secondaryCian/80 absolute end-1.5 bottom-3 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-1.5">
             Buscar
           </button>
         </div>

@@ -94,28 +94,30 @@ const Login: React.FC = () => {
   }, [form.email, form.password]);
 
   return (
-    <section
-      className="flex justify-center items-center h-screen bg-gradient-to-r from-testCian via-testCian to-testCian"
-      
-    >
-      <form className="form-login max-w-sm mx-auto bg-gradient-to-b from-testBlue/30 via-testCian to-testBlue/30 rounded-xl p-8">
-        <div className="text-center mb-4 ">
+    <section className="flex justify-center items-center h-screen ">
+      <div className="absolute inset-0 bg-no-repeat bg-center  ">
+        <video className=" w-full h-full object-cover " autoPlay loop muted>
+          <source src="/img/video/test_login.webm" type="video/mp4" />
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </div>
+      <form className="relative form-login max-w-sm mx-auto bg-gradient-to-b from-testCian/45 via-testBlue/80 to-testBlue/20 rounded-xl p-8">
+        <div className="relative text-center mb-4 ">
           <Image
             className="mx-auto w-24 lg:w-40"
-            src="/img/logo/logo_cert.png"
+            src="/img/logo/logo_login.png"
             alt="logo"
             width={120}
             height={120}
           />
           {resErrors?.message && (
-              <span className="text-gray-100 bg-red-600/50 w-full mt-3 p-2 rounded-xl font-semibold text-sm">
-                {resErrors.message}
-              </span>
-            )}
-
+            <span className="text-gray-100 bg-red-600/50 w-full mt-3 p-2 rounded-xl font-semibold text-sm">
+              {resErrors.message}
+            </span>
+          )}
         </div>
-        
-        <div className=" mb-5">
+
+        <div className="relative mb-5">
           <div className="relative block mb-2 text-sm font-medium text-gray-900 dark:text-white">
             Correo electrónico
           </div>
@@ -143,7 +145,7 @@ const Login: React.FC = () => {
             onKeyDown={(event) => handleKeyDown(event)}
           />
         </div>
-       
+
         <div className="flex justify-center">
           <button
             type="button"
