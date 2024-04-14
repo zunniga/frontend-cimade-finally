@@ -1,9 +1,8 @@
 "use client"
 import { motion, Variants, TargetAndTransition } from 'framer-motion';
 import React, {  } from 'react';
-
 import styles from '@/styles/index';
-import { insights } from '@/components/utils/constants/index';
+import { insights2 } from '@/components/utils/constants/index';
 import { staggerContainer } from '../utils/motion';
 import GraduateCard  from './CoursesCard';
 import { TitleText, TypingText } from '../share/CustomText'
@@ -27,7 +26,7 @@ const Graduate: React.FC = () => (
   
    
        <div className="mt-12 grid lg:grid-cols-3 md:grid-cols-2 gap-4 lg:gap-14" data-wow-duration="1s" data-wow-delay=".3s">
-        {insights.map((item, index: number) => (
+        {insights2.map((item, index: number) => (
           <GraduateCard key={`insight-${index}`} {...item} index={index + 1} />
         ))}
       </div>

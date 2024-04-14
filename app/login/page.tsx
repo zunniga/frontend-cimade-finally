@@ -97,7 +97,7 @@ const Login: React.FC = () => {
     <section className="flex justify-center items-center h-screen ">
       <div className="absolute inset-0 bg-no-repeat bg-center  ">
         <video className=" w-full h-full object-cover md:mt-2 " autoPlay loop muted>
-          <source src="/img/video/test_login.webm" type="video/mp4" />
+          <source src="/img/video/blue.webm" type="video/mp4" />
           Tu navegador no soporta la etiqueta de video.
         </video>
       </div>

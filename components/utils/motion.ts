@@ -104,4 +104,77 @@ export function slideInFromLeft(delay: number) {
       },
     },
   });
+
+
+  //NUEVAS ANIMACIONES
+
   
+  export const slideFromLeft = {
+    hidden: { x: -200, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        delay: 0.5,
+        ease: "easeInOut",
+      },
+    },
+  };
+
+  export const slideFromTop = {
+    hidden: { y: -200, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        delay: 0.5,
+        ease: "easeInOut",
+      },
+    },
+  };
+
+  export const slideFromRight = {
+    hidden: { x: 200, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 1.2,
+        delay: 0.5,
+        ease: "easeInOut",
+      },
+    },
+  };
+
+  export const fadeInFrom = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        delay: 0.5,
+        ease: "easeInOut",
+      },
+    },
+  };
+
+  export const textVariants: Variants = {
+    hidden: { opacity: 0, x: -200 },
+    visible: { opacity: 1, x: 0, transition: { duration: 1.5 } }
+  };
+
+  export const zoomInFrom = {
+    hidden: {
+      scale: 0.8,
+      opacity: 0
+    },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      transition: {
+        duration: 2  
+      }
+    }
+  }

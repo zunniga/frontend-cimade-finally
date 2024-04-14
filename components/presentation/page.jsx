@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image'
 import Count from '@/components/common/count';
 import React, { useEffect, useRef, useState } from 'react';
-import service_data from '@/components/data/service-data';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import "./Presentation.css";
 // svg icon
@@ -126,8 +125,9 @@ const ServiceArea = () => {
             </div>
 
             <div className="md:w-1/3">
+               
                <div className="tp-fun-fact-thumb p-relative animate-[wiggle_1s_ease-in-out_infinite] ">
-                  <Image id="reload" src={reload_img} alt="scroll" />
+                  <Image id="reload" src={reload_img} alt="scroll"  />
                </div>
             </div>
 
