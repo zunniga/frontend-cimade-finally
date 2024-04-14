@@ -34,11 +34,12 @@ module.exports = {
     extend: {
       colors: {
         primaryBlue: '#0079bb',
-        secondaryCian: '#00dbb8',
+        secondaryCian: '#039f85',
 
         testBlue : '#0079bb',
         testCian : '#00dbb8',
-        testGris : "#424242"
+        intersting : "#00507c"
+
        
 
       },

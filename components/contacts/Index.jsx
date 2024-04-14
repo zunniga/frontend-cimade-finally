@@ -42,7 +42,7 @@ const Index = () => {
         </div>
 
         <div className=" container px-6 md:px-12 mb-20"> bg-gradient-to-b  via-[] 
-          <div className="bg-gradient-to-b  from-testBlue/80 to-testCian/50 block rounded-lg  px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]">
+          <div className="bg-gradient-to-b  from-intersting/50 to-testCian/50 block rounded-lg  px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]">
             <div className="flex flex-wrap">
               <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
                 <form>

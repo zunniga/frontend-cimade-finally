@@ -77,18 +77,22 @@ export function slideInFromLeft(delay: number) {
 
   export const fadeIn = (direction: string, type: string, delay: number, duration: number) => ({
     hidden: {
-      x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
-      y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
       opacity: 0,
+      scale: 0.8, // Opcional: puedes agregar una escala inicial para hacer un efecto de zoom al aparecer
+      ...(direction === 'left' && { x: -100 }), // Mueve el componente hacia la izquierda
+      ...(direction === 'right' && { x: 100 }), // Mueve el componente hacia la derecha
+      ...(direction === 'up' && { y: -100 }), // Mueve el componente hacia arriba
+      ...(direction === 'down' && { y: 100 }), // Mueve el componente hacia abajo
     },
     show: {
-      x: 0,
-      y: 0,
       opacity: 1,
+      scale: 1, // Restaura la escala original
+      x: 0, // Reinicia la posición en el eje x
+      y: 0, // Reinicia la posición en el eje y
       transition: {
-        type,
-        delay,
-        duration,
+        type: type,
+        delay: delay,
+        duration: duration,
         ease: 'easeOut',
       },
     },
@@ -100,3 +104,4 @@ export function slideInFromLeft(delay: number) {
       },
     },
   });
+  

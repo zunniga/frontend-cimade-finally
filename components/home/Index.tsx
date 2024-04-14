@@ -162,11 +162,11 @@ const Home = () => {
                       animate="visible"
                       exit="hidden"
                       variants={slideInFromLeft(1)}
-                      className="lg:leading-[3.8em] leading-[2.3em] text-center "
+                      className="lg:leading-[4.5em]   leading-[2.3em] text-center "
                     >
                       <h1>
                         <p
-                          className={`mt-6 lg:text-[83px] text-[42px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r text-center ${tittle.color1}`}
+                          className={`mt-6 lg:text-[83px] md:text-[45px] text-[42px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r text-center ${tittle.color1}`}
                         >
                           {tittle.tittle1}
                         </p>
@@ -178,7 +178,7 @@ const Home = () => {
                       animate="visible"
                       exit="hidden"
                       variants={slideInFromLeft(1)}
-                      className="lg:leading-[3.8em] leading-[2.3em] text-center"
+                      className="lg:leading-[4.5em]  leading-[2.3em] text-center"
                     >
                       <h1>
                         <p

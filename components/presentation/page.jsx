@@ -98,7 +98,7 @@ const ServiceArea = () => {
 
     return (   
         <>
-            <div className="tp-service-funfact-box flex flex-col md:flex-row justify-center items-center  bg-gradient-to-b from-testBlue via-testCian/50 to-testBlue pb- "> {/* Aplicamos flexbox para disposición horizontal y centrado vertical y horizontal */}
+            <div className="tp-service-funfact-box flex flex-col md:flex-row justify-center items-center  bg-gradient-to-b from-intersting via-testCian/50 to-intersting pb- "> {/* Aplicamos flexbox para disposición horizontal y centrado vertical y horizontal */}
    <section className="tp-fun-fact-area pt-60 pb-65 p-relative " >
       <div className="container container-1400">
 

@@ -14,11 +14,14 @@ interface InsightCardProps {
 const GraduateCard: FC<InsightCardProps> = ({ imgUrl, title, subtitle, index }) => (
 //<Link href="/graduate">
   <motion.div
-    variants={fadeIn('up', 'spring', index * 0.5, 1)}
-    initial="animate"
-    className="flex md:flex-col flex-col gap-4 px-2 py-2 mb-8 mx-auto rounded-2xl bg-primaryBlue hover:cursor-pointer "
-    whileHover={{ scale: 1.1, backgroundColor: 'blue' }}
-    whileTap={{ scale: 1 }}
+  whileHover={{ scale: 1, rotate: 4 }}
+  whileTap={{
+    scale: 0.8,
+    rotate: -90,
+    borderRadius: "100%"
+  }}
+    className="flex md:flex-col flex-col gap-4 px-2 py-2 mb-8 mx-auto rounded-2xl bg-secondaryCian hover:cursor-pointer "
+   
   >
     <div className="flex justify-center ">
     <Image

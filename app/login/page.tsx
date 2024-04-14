@@ -96,12 +96,12 @@ const Login: React.FC = () => {
   return (
     <section className="flex justify-center items-center h-screen ">
       <div className="absolute inset-0 bg-no-repeat bg-center  ">
-        <video className=" w-full h-full object-cover " autoPlay loop muted>
+        <video className=" w-full h-full object-cover md:mt-2 " autoPlay loop muted>
           <source src="/img/video/test_login.webm" type="video/mp4" />
           Tu navegador no soporta la etiqueta de video.
         </video>
       </div>
-      <form className="relative form-login max-w-sm mx-auto bg-gradient-to-b from-testCian/45 via-testBlue/80 to-testBlue/20 rounded-xl p-8">
+      <form className="relative form-login max-w-sm mx-auto bg-gradient-to-b from-testCian/45 via-testBlue/80 to-testBlue/20 rounded-xl p-8  mt-28 mb-6">
         <div className="relative text-center mb-4 ">
           <Image
             className="mx-auto w-24 lg:w-40"

@@ -10,7 +10,7 @@ interface TypingTextProps {
 export const TypingText: FC<TypingTextProps> = ({ title, textStyles }) => (
   <motion.p
     variants={textContainer}
-    className={`font-extrabold lg:text-5xl text-4xl text-white ${textStyles}`}
+    className={`font-extrabold lg:text-6xl text-4xl   text-white ${textStyles}`}
   >
     {Array.from(title).map((letter, index) => (
       <motion.span variants={textVariant2} key={index}>
