@@ -93,11 +93,11 @@ const SearchName:React.FC<SearchNameProps> = ({ onSearchName }) => {
     }
   };
   const tableRows = [
-    { imgSrc:'/icons/organizadopor.svg', label: 'Organizado por:', value: selectedStudentData?.institute },
-    { imgSrc:'/icons/otorgado.svg', label: 'Otorgado a:', value: selectedStudentData?.name },
-    { imgSrc:'/icons/nom_evento.svg', label: 'Nombre del evento:', value: selectedStudentData?.activityAcademy },
-    { imgSrc:'/icons/creditos_horas.svg', label: 'Creditos/Horas:', value: selectedStudentData?.hour },
-    { imgSrc:'/icons/fecha_emision.svg', label: 'Fecha de emisión:', value: selectedStudentData?.date },
+    { imgSrc:'/img/icons/organizadopor.svg', label: 'Organizado por:', value: selectedStudentData?.institute },
+    { imgSrc:'/img/icons/otorgado.svg', label: 'Otorgado a:', value: selectedStudentData?.name  },
+    { imgSrc:'/img/icons/nom_evento.svg', label: 'Nombre del evento:', value: selectedStudentData?.activityAcademy },
+    { imgSrc:'/img/icons/creditos_horas.svg', label: 'Creditos/Horas:', value: selectedStudentData?.hour },
+    { imgSrc:'/img/icons/fecha_emision.svg', label: 'Fecha de emisión:', value: selectedStudentData?.date },
   ];
 
   return (
@@ -179,7 +179,7 @@ const SearchName:React.FC<SearchNameProps> = ({ onSearchName }) => {
                       {tableRows.map((row, index) => (
                         <div key={index} className="mb-4">
                         <div className="flex items-center text-gray-100 text-sm p-1 lg:ml-5 ml-0 lg:w-80 w-full rounded-lg bg-slate-600 font-semibold">
-                          {row.imgSrc && <Image src={row.imgSrc} alt={row.label} className="flex lg:w-5 lg:h-5 w-5 h-5 object-contain ml-1" />}
+                          {row.imgSrc && <Image src={row.imgSrc} width={150} alt={row.label} className="flex lg:w-5 lg:h-5 w-5 h-5 object-contain ml-1" />}
                           <div className='flex-1 text-center'>
                           {row.label}
                           </div>

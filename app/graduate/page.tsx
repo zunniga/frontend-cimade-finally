@@ -19,9 +19,9 @@ const Graduate = () => {
       <div className="relative pt-20 lg:pt-40 pb-20 lg:pb-40">
       <div className="absolute top-0 w-full h-full z-0">
       <video className="w-full h-full object-cover" autoPlay loop muted>
-        <source src="/img/video/blue.webm" type="video/webm" />
+        <source src="/img/video/graduate.webm" type="video/webm" />
       </video>
-      <div className="absolute top-0 left-0 w-full h-full bg-testCian opacity-60"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-testBlue opacity-60"></div>
       {/* <span id="blackOverlay" className="w-full h-full absolute opacity-60 bg-gray-800"></span> */}
     </div>
     <div className="relative mx-auto max-w-screen-xl p-2 text-white">

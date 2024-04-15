@@ -1,10 +1,9 @@
 import React, { useState, FormEvent} from 'react'
 import { URL } from '@/components/utils/format/tokenConfig';
-import axios from 'axios';
+import axios from 'axios'
 import { SearchCodeProps, StudentCode } from '../../interface/interface';
 import Modal from '../share/Modal';
 import Image from 'next/image';
-
 
 const SearchName:React.FC<SearchCodeProps> = ({ onSearchCode }) => {
 
@@ -67,6 +66,7 @@ const SearchName:React.FC<SearchCodeProps> = ({ onSearchCode }) => {
     { imgSrc:'/icons/fecha_emision.svg', label: 'Fecha de emisión:', value: studentData?.date },
   ];
   return (
+
   <div className="max-w-screen-xl mx-auto mb-8 text-center lg:mb-12">
     <form onSubmit={searchCode} className="w-full md:w-2/3 lg:w-full xl:w-2/3 mx-auto">
     <label htmlFor="default-search" className="mb-2 text-sm font-medium "></label>
@@ -79,7 +79,7 @@ const SearchName:React.FC<SearchCodeProps> = ({ onSearchCode }) => {
         <input
           type="search"
           id="default-search"
-          className="block w-full font-semibold p-4 ps-10 text-sm text-gray-900 border-2 border-primarygreen rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:placeholder-gray-400 dark:text-black"
+          className="block w-full font-semibold p-4 ps-10 text-sm text-gray-900 border-2 border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:placeholder-gray-400 dark:text-black"
           placeholder={`Buscar por código ${searchType === 'code' ? 'código' : ''}`}
           required
           onClick={toggleIsActive}
@@ -88,7 +88,7 @@ const SearchName:React.FC<SearchCodeProps> = ({ onSearchCode }) => {
           />
         <button
           type="submit"
-          className="botonCert bg-secondaryCian/80 absolute end-1.5 bottom-3 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-4 py-1.5"
+          className="buttonGlobal bg-secondaryCian/80 absolute end-1.5 bottom-3 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-1.5"
           onClick={() => setOpen(true)}>
             Buscar
         </button>
@@ -97,16 +97,15 @@ const SearchName:React.FC<SearchCodeProps> = ({ onSearchCode }) => {
   {loading && <p>Cargando...</p>}
       {studentData && (
         <Modal open={open} onClose={() => setOpen(false)}>
-          <div className='flex justify-center mb-4'>
-            <Image alt="logo_unp" src={'/certificate/logo_unp.png'} className="lg:w-32 lg:h-32 w-28 h-28 object-contain"  width={128} height={128} />
-            <Image alt="logo_certificate" src={'/certificate/logo_certificados.png'} className="lg:w-24 lg:h-32 w-28 h-28 object-contain" width={128} height={128}/>
-          
+          <div className='flex justify-center mb-4 gap-4'>
+            <Image src={'/img/logo/logo_binexx.png'} alt='binex' className="lg:w-40 lg:h-32 w-36 h-28 mt-[42px] object-contain" width={800} height={800}  priority={true}/>
+            <Image src={'/img/certificate/unp.png'} alt='binex' className="lg:w-40 lg:h-40 w-36 h-36 mt-[18px] object-contain" width={800} height={800}  priority={true}/>
           </div>
           <div className="max-w-md mx-auto p-6 bg-white rounded-md">
             {tableRows.map((row, index) => (
               <div key={index} className="mb-4">
                <div className="flex items-center text-gray-100 text-sm p-1 lg:ml-5 ml-0 lg:w-80 w-full rounded-lg bg-slate-600 font-semibold">
-                {row.imgSrc && <Image src={row.imgSrc} alt={row.label} className="flex lg:w-5 lg:h-5 w-5 h-5 object-contain ml-1" />}
+                {row.imgSrc && <Image src={row.imgSrc} width={150} height={150} alt={row.label} className="flex lg:w-5 lg:h-5 w-5 h-5 object-contain ml-1" />}
                 <div className='flex-1 text-center'>
                 {row.label}
                 </div>

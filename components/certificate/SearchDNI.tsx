@@ -81,7 +81,7 @@ const SearchName:React.FC<SearchDNIProps> = ({ onSearchDNI }) => {
     { imgSrc:'/icons/organizadopor.svg', label: 'Organizado por:', value: selectedStudentData?.institute },
     { imgSrc:'/icons/otorgado.svg', label: 'Otorgado a:', value: selectedStudentData?.name },
     { imgSrc:'/icons/nom_evento.svg', label: 'Nombre del evento:', value: selectedStudentData?.activityAcademy },
-    { imgSrc:'/icons/creditos_horas.svg', label: 'Creditos/Horas:', value: selectedStudentData?.hour },
+    { imgSrc:'/icons/creditos_horas.svg', label: 'Creditos/Horas:', value: selectedStudentData?.hour  },
     { imgSrc:'/icons/fecha_emision.svg', label: 'Fecha de emisión:', value: selectedStudentData?.date },
   ];
 
@@ -155,14 +155,14 @@ const SearchName:React.FC<SearchDNIProps> = ({ onSearchDNI }) => {
                 {selectedStudentData && (
                   <Modal open={openModals[index]} onClose={() => closeStudentModal(index)}>
                     <div className='flex justify-center mb-4'>
-                    <Image alt="logo_unp" src={'/certificate/logo_unp.png'} className="lg:w-32 lg:h-32 w-28 h-28 object-contain" width={128} height={128}/>
-                    <Image alt="logo_certificate" src={'/certificate/logo_certificados.png'} className="lg:w-24 lg:h-32 w-28 h-28 object-contain" width={128} height={128}/>
+                    <Image src={'/img/logo/logo_binexx.png'} alt='binex' className="lg:w-40 lg:h-32 w-36 h-28 mt-[42px] object-contain" width={800} height={800}  priority={true}/>
+            <Image src={'/img/certificate/unp.png'} alt='binex' className="lg:w-40 lg:h-44 w-36 h-36 mt-[18px] object-contain" width={800} height={800}  priority={true}/>
                     </div>
                     <div className="max-w-md mx-auto p-6 bg-white rounded-md">
                       {tableRows.map((row, index) => (
                         <div key={index} className="mb-4">
                         <div className="flex items-center text-gray-100 text-sm p-1 lg:ml-5 ml-0 lg:w-80 w-full rounded-lg bg-slate-600 font-semibold">
-                          {row.imgSrc && <Image  src={row.imgSrc} alt={row.label} className="flex lg:w-5 lg:h-5 w-5 h-5 object-contain ml-1" />}
+                          {row.imgSrc && <Image  src={row.imgSrc} alt={row.label} width={150} height={150} className="flex lg:w-5 lg:h-5 w-5 h-5 object-contain ml-1" />}
                           <div className='flex-1 text-center'>
                           {row.label}
                           </div>

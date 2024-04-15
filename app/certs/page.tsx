@@ -42,7 +42,7 @@ const Certificate: React.FC = () => {
               className="lg:w-56 lg:h-56 w-48 h-48 object-contain "
               width={800}
               height={800}
-              alt="logo_promas"
+              alt="logo_binex"
               priority={true}
             />
             <Image
@@ -50,7 +50,7 @@ const Certificate: React.FC = () => {
               className="lg:w-56 lg:h-56 w-48 h-48 object-contain "
               width={800}
               height={800}
-              alt="logo_promas"
+              alt="logo_binex"
               priority={true}
             />
           </div>
