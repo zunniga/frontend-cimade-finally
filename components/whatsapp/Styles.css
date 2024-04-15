@@ -1,0 +1,8 @@
+.container-redes {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
