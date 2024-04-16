@@ -8,7 +8,7 @@ import { FaRegFilePdf, FaWhatsapp } from "react-icons/fa6";
 import Modal  from "@/components/share/Modal";
 import Image from "next/image";
 
-const GraduateFoodQuality = () => {
+const GraduateAmbientaly = () => {
 const [isAccordionOpen1, setIsAccordionOpen1] = useState(false);
 const [isAccordionOpen2, setIsAccordionOpen2] = useState(false);
 const [openWindow, setOpenWindow] = useState<Window | null>(null);
@@ -26,13 +26,13 @@ const [imageUrl, setImageUrl] = useState('');
   };
 
   const handleClick = () => {
-    const newWindow = window.open('/BROCHURE/GESTION_CALIDAD_INOCUIDAD_ALIMENTARIA.pdf');
+    const newWindow = window.open('/BROCHURE/ESTUDIO_IMPACTO_AMBIENTAL.pdf');
     setOpenWindow(newWindow);
 
     // Descargar el archivo PDF
     const link = document.createElement('a');
-    link.href = '/BROCHURE/GESTION_CALIDAD_INOCUIDAD_ALIMENTARIA.pdf';
-    link.download = 'GESTION_CALIDAD_INOCUIDAD_ALIMENTARIA.pdf';
+    link.href = '/BROCHURE/ESTUDIO_IMPACTO_AMBIENTAL.pdf';
+    link.download = 'ESTUDIO_IMPACTO_AMBIENTAL.pdf';
     link.click();
   };
 
@@ -42,26 +42,26 @@ const [imageUrl, setImageUrl] = useState('');
           <div className="sm:w-96 mb-4 sm:mb-0">
             <Image
               className="bg-cover h-96 w-96 rounded-3xl"
-              src="/graduate/gestion_alimentaria.webp"
+              src="/img/graduates/tecnico_obras.webp"
               alt="icon"
               width={800}
               height={800}
-              priority={true}/>
+              priority={true}
+            />
           </div>
           <div className="sm:w-1/2 md:px-20 sm:px-5 lg:mt-4">
-            <div className="text-pink-600 font-extrabold font-poppins lg:text-3xl text-2xl mb-4">
-              GESTIÓN DE LA CALIDAD E INOCUIDAD ALIMENTARIA
+            <div className="text-testBlue font-extrabold font-poppins lg:text-3xl text-2xl mb-4">
+            GESTIÓN DE LA CALIDAD E INOCUIDAD ALIMENTARIA
             </div>
             <div className="mb-4">
               <p className="text-sm font-semibold text-gray-600 italic">
-                Diplomado dirigido a bachilleres, titulados y profesionales de las carreras de ingeniería de industria
-                alimentarias, agroindustriales, agrónomos, biólogos y carreras afines a 
-                la calidad e inocuidad, jefes, supervisores y personal técnico involucrado 
-                en actividad es relacionadas con alguna etapa de la cadena alimentaria: 
-                producción primaria, transporte, almacenamiento y elaboración.
+                Diplomado dirigido a
+                profesionales del medio ambiente, gestores de proyectos, consultores
+                ambientales, autoridades reguladoras, estudiantes y académicos, profesionales de derecho ambiental, planificadores urbanos, ONGs, empresarios
+                y público en general.
               </p>
             </div>
-            <div className="grid lg:grid-cols-2 grid-cols-1 text-pink-500 text-sm mb-4">
+            <div className="grid lg:grid-cols-2 grid-cols-1 text-testBlue text-sm mb-4">
               <div className="flex items-center mb-2">
               <Image
                 src="/INICIO.png"
@@ -69,7 +69,7 @@ const [imageUrl, setImageUrl] = useState('');
                 width={20}
                 height={20}
                 priority={true}/>
-                <p className="font-bold ml-1">Inicio 31 de Marzo</p>
+                <p className="font-bold ml-1">Inicio 18 de Mayo</p>
               </div>
 
               <div className="flex items-center mb-2">
@@ -106,8 +106,8 @@ const [imageUrl, setImageUrl] = useState('');
               <div className="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 gap-2">
                 <div className="w-full">
                   <Link
-                    className="border-2 border-violet-600 flex items-center justify-center text-gray-600 font-bold rounded-xl p-2 hover:scale-105 duration-300"
-                    href='https://wa.me/51984040264?text=Hola,%20deseo%20más%20información%20sobre%20el%20diplomado%20de%20Gestión%20de%20la%20Calidad%20e%20Inocuidad%20Alimentaria'
+                    className="border-2 border-testCian flex items-center justify-center text-gray-600 font-bold rounded-xl p-2 hover:scale-105 duration-300"
+                    href='https://wa.me/51921814045?text=Hola,%20deseo%20más%20información%20sobre%20los%20diplomados'
                     target="_blank">
                       <div className="items-center text-xs uppercase inline-flex">
                         <FaWhatsapp className="text-green-500 text-lg"/>
@@ -118,7 +118,7 @@ const [imageUrl, setImageUrl] = useState('');
                 <div className="w-full">
                   <button
                     onClick={handleClick}
-                    className="border-2 border-violet-600 w-full flex items-center justify-center mb- text-gray-600 font-bold rounded-xl p-2 hover:scale-105 duration-300"
+                    className="border-2 border-testCian w-full flex items-center justify-center mb- text-gray-600 font-bold rounded-xl p-2 hover:scale-105 duration-300"
                     rel="noopener noreferrer">
                       <div className="items-center text-xs uppercase inline-flex">
                         <FaRegFilePdf className="text-red-500 text-lg"/>
@@ -128,7 +128,7 @@ const [imageUrl, setImageUrl] = useState('');
                 </div>
                 <div>
                   <button
-                    className="border-2 border-violet-600 w-full flex items-center justify-center mb-4 text-gray-600 font-bold rounded-xl p-2 hover:scale-105 duration-300"
+                    className="border-2 border-testCian w-full flex items-center justify-center mb-4 text-gray-600 font-bold rounded-xl p-2 hover:scale-105 duration-300"
                     onClick={() => handleImageClick('/IMAGEN.png')}>
                       <div className="items-center text-xs uppercase inline-flex">
                       <Image
@@ -152,7 +152,7 @@ const [imageUrl, setImageUrl] = useState('');
               <div className="z-0">
                 <button
                   onClick={toggleAccordion1}
-                  className="p-1 px-4 border flex items-center justify-between mb-4 text-gray-100 bg-violet-700 font-bold rounded-xl w-full hover:scale-105 duration-300"
+                  className="p-1 px-4 border flex items-center justify-between mb-4 text-gray-100 bg-testCian/75 font-bold rounded-xl w-full hover:scale-105 duration-300"
                   style={{ zIndex: 0 }}>
                   <h1 className="hover:scale-110 duration-300 uppercase text-">Lista de Módulos</h1>
                   <div>
@@ -166,7 +166,7 @@ const [imageUrl, setImageUrl] = useState('');
               </div>
             {isAccordionOpen1 && (
               <motion.div
-                className="bg-white rounded-lg"
+                className="bg-transparent rounded-lg"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { duration: 0.1} }}>
                 <div className="text-sm font-sans font-semibold">
@@ -176,7 +176,7 @@ const [imageUrl, setImageUrl] = useState('');
                       key={index}
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1, transition: { duration: 1, delay: index * 0.2 } }}
-                      className="lg:p-2 p-2 mb-3 border rounded-md bg-slate-50 hover:bg-violet-600 hover:text-gray-100 border-violet-500 hover:scale-110 duration-300 cursor-pointer"
+                      className="lg:p-2 p-2 mb-3 border rounded-md bg-slate-50 text-black hover:bg-testCian hover:text-gray-100 border-testCian hover:scale-110 duration-300 cursor-pointer"
                       style={{ display: 'block', width: '100%' }}
                       onClick={() => window.open(`https://wa.me/51984040264/?text=${encodeURIComponent(item.text)}`, '_blank')}>
                       <div className="flex items-center">
@@ -195,4 +195,4 @@ const [imageUrl, setImageUrl] = useState('');
   )
 }
 
-export default GraduateFoodQuality;
+export default GraduateAmbientaly;

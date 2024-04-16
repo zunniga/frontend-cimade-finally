@@ -51,7 +51,7 @@ const [imageUrl, setImageUrl] = useState('');
           </div>
           <div className="sm:w-1/2 md:px-20 sm:px-5 lg:mt-4">
             <div className="text-testBlue font-extrabold font-poppins lg:text-3xl text-2xl mb-4">
-            INGENIERÍA VIAL
+            ESTUDIO DE IMPACTO AMBIENTAL
             </div>
             <div className="mb-4">
               <p className="text-sm font-semibold text-gray-600 italic">

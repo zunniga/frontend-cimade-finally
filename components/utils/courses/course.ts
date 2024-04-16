@@ -78,8 +78,10 @@ export const modulesTechnicalIrrigation = [
 
 //Ingenieria Civil
 export const modulesTechnicalAssistant = [
+    {name: "Expediente técnico en obras", text:"Hola, deseo más información sobre el curso de Expediente técnico en obras"},
+    {name: "Régimen laboral en construcción civil", text:"Hola, deseo más información sobre el curso de Régimen laboral en construcción civil"},
     {name: "Planificación y programación de obras", text:"Hola, deseo más información sobre el curso de Planificación y programación de obras"},
-    {name: "Control de obras", text:"Hola, deseo más información sobre el curso de Control de obras"},
+    {name: "Control de obras", text:"Hola, deseo más información sobre el curso de Cuaderno de Control de obras"},
     {name: "Metrados en edificaciones", text:"Hola, deseo más información sobre el curso de Metrados en edificaciones"},
     {name: "Cuaderno de obra físico y digital", text:"Hola, deseo más información sobre el curso de Cuaderno de obra físico y digital"},
     {name: "Costos y Presupuestos con S10", text:"Hola, deseo más información sobre el curso de Costos y Presupuestos con S10"},
@@ -88,49 +90,50 @@ export const modulesTechnicalAssistant = [
     {name: "Formulación y planificación de proyectos con MS Project", text:"Hola, deseo más información sobre el curso de Formulación y planificación de proyectos con MS Project"},
     {name: "Análisis y diseño de instituciones educativas", text:"Hola, deseo más información sobre el curso de Análisis y diseño de instituciones educativas"},
     {name: "Seguridad, salud ocupacional y medio ambiente en obras públicas", text:"Hola, deseo más información sobre el curso de Seguridad, salud ocupacional y medio ambiente en obras públicas"},
-    {name: "Expediente técnico en obras", text:"Hola, deseo más información sobre el curso de Expediente técnico en obras"},
-    {name: "Régimen laboral en construcción civil", text:"Hola, deseo más información sobre el curso de Régimen laboral en construcción civil"},
 ];
 export const modulesIngVial = [
+    {name: "Tráfico y carga en proyectos viales", text:"Hola, deseo más información sobre el curso de Tráfico y carga en proyectos viales"},
+    {name: "Topografía, diseño geométrico, señalización y seguridad vial", text:"Hola, deseo más información sobre el curso de Topografía, diseño geométrico, señalización y seguridad vial"},
     {name: "Geología – Geotecnia en obras viales", text:"Hola, deseo más información sobre el curso de Geología – Geotecnia en obras viales"},
-    {name: "Suelos y pavimentos", text:"Hola, deseo más información sobre el curso de Suelos y pavimentos"},
+    {name: "Suelos y pavimentos en proyectos viales", text:"Hola, deseo más información sobre el curso de Suelos y pavimentos en proyectos viales"},
     {name: "Hidrología e hidráulica", text:"Hola, deseo más información sobre el curso de Hidrología e hidráulica"},
-    {name: "Estructuras en carreteras - puentes", text:"Hola, deseo más información sobre el curso de Estructuras en carreteras - puentes"},
+    {name: "Estructuras en carreteras – puentes", text:"Hola, deseo más información sobre el curso de Estructuras en carreteras – puentes"},
     {name: "Metrados, costos y presupuesto – cronograma en obras viales", text:"Hola, deseo más información sobre el curso de Metrados, costos y presupuesto – cronograma en obras viales"},
     {name: "Arqueología en proyectos viales", text:"Hola, deseo más información sobre el curso de Arqueología en proyectos viales"},
-    {name: "Estudio medio ambiental – derecho de vía – interferencias", text:"Hola, deseo más información sobre el curso de Estudio medio ambiental – derecho de vía – interferencias"},
     {name: "Diseño, construcción y mantenimiento de Túneles", text:"Hola, deseo más información sobre el curso de Diseño, construcción y mantenimiento de Túneles"},
     {name: "Integración de proyectos de infraestructura vial", text:"Hola, deseo más información sobre el curso de Integración de proyectos de infraestructura vial"},
-    {name: "Tráfico y carga", text:"Hola, deseo más información sobre el curso de Tráfico y carga"},
-    {name: "Topografía, diseño geométrico, señalización y seguridad vial", text:"Hola, deseo más información sobre el curso de Topografía, diseño geométrico, señalización y seguridad vial"}
+   
 ];
 export const modulesIngBridge = [
+    {name: "Diseño y modelamiento de puentes con CSi BRIDGE", text:"Hola, deseo más información sobre el curso de Diseño y modelamiento de puentes con CSi BRIDGE"},
+    {name: "Mantenimiento y conservacíon de puentes", text:"Hola, deseo más información sobre el curso de Modelamiento y análisis estructural de puentes"},
     {name: "Diseño sísmico en puentes AASHTO-LRFD", text:"Hola, deseo más información sobre el curso de Diseño sísmico en puentes AASHTO-LRFD"},
-    {name: "Mantenimiento y conservacíon de puentes", text:"Hola, deseo más información sobre el curso de Mantenimiento y conservacíon de puentes"},
+    {name: "Mantenimiento y conservación de puentes", text:"Hola, deseo más información sobre el curso de Mantenimiento y conservación de puentes"},
     {name: "Inspección, evaluación de puentes bajo la metodología SCAP", text:"Hola, deseo más información sobre el curso de Inspección, evaluación de puentes bajo la metodología SCAP"},
     {name: "Diseño de puentes, pontones", text:"Hola, deseo más información sobre el curso de Diseño de puentes, pontones"},
     {name: "Estudios de Hidrología e hidráulica en puentes", text:"Hola, deseo más información sobre el curso de Estudios de Hidrología e hidráulica en puentes"},
-    {name: "Estudios Geológicos y geotécnicos en puentes", text:"Hola, deseo más información sobre el curso de Estudios Geológicos y geotécnicos en puentes"},
-    {name: "Diseño y modalamiento de puentes con SAP 2000", text:"Hola, deseo más información sobre el curso de Diseño y modalamiento de puentes con SAP 2000"},
-    {name: "Diseño y modelamiento de puentes con CSi BRIDGE", text:"Hola, deseo más información sobre el curso de Diseño y modelamiento de puentes con CSi BRIDGE"},
-    {name: "Modelamiento y análisis estructural de puentes", text:"Hola, deseo más información sobre el curso de Modelamiento y análisis estructural de puentes"}
+    {name: "Estudios geológicos y geotécnicos en puentes", text:"Hola, deseo más información sobre el curso de Estudios geológicos y geotécnicos en puentes"},
+    {name: "Diseño y modelamiento de puentes con SAP 2000", text:"Hola, deseo más información sobre el curso de Diseño y modelamiento de puentes con SAP 2000"}
 ];
 export const modulesWorksSupervision = [
-    {name: "Planeamiento Y Programación de Obras", text:"Hola, deseo más información sobre el curso de Planeamiento Y Programación de Obras"},
-    {name: "Informes de obra", text:"Hola, deseo más información sobre el curso de Informes de obra"},
-    {name: "Control técnico y calidad en obras", text:"Hola, deseo más información sobre el curso de Control técnico y calidad en obras"},
-    {name: "Ampliaciones de plazo, adicionales de obra y penalidades en obra", text:"Hola, deseo más información sobre el curso de Ampliaciones de plazo, adicionales de obra y penalidades en obra"},
-    {name: "Recepción - liquidación de obras y medios de controversia", text:"Hola, deseo más información sobre el curso de Recepción - liquidación de obras y medios de controversia"},
-    {name: "Expediente técnico como herramienta para la ejecución y supervisión de obra", text:"Hola, deseo más información sobre el curso de Expediente técnico como herramienta para la ejecución y supervisión de obra"},
-    {name: "Valorización y liquidación de obras por administración directa", text:"Hola, deseo más información sobre el curso de Valorización y liquidación de obras por administración directa"},
-    {name: "Plan de gestión de seguridad y salud en obra", text:"Hola, deseo más información sobre el curso de Plan de gestión de seguridad y salud en obra"},
     {name: "Contratación y ejecución de obras", text:"Hola, deseo más información sobre el curso de Contratación y ejecución de obras"},
     {name: "Preliminares para inicio de obra", text:"Hola, deseo más información sobre el curso de Preliminares para inicio de obra"},
-    {name: "Metrados y valorizaciones de obra", text:"Hola, deseo más información sobre el curso de Metrados y valorizaciones de obra"}
+    {name: "Metrados y valorizaciones de obra", text:"Hola, deseo más información sobre el curso de Metrados y valorizaciones de obra"},
+    {name: "Planeamiento y programación de obras", text:"Hola, deseo más información sobre el curso de Planeamiento y programación de obras"},
+    {name: "Informes de obra", text:"Hola, deseo más información sobre el curso de Informes de obra"},
+    {name: "Control técnico y calidad en obras", text:"Hola, deseo más información sobre el curso de  Control técnico y calidad en obras"},
+    {name: "Ampliaciones de plazo, adicionales de obra y penalidades en obra", text:"Hola, deseo más información sobre el curso de Ampliaciones de plazo, adicionales de obra y penalidades en obra"},
+    {name: "Recepción - liquidación de obras y medios de solución de controversia", text:"Hola, deseo más información sobre el curso de Recepción - liquidación de obras y medios de solución de controversia"},
+    {name: "Expedientes técnicos de ejecución de obra", text:"Hola, deseo más información sobre el curso de Expedientes técnicos de ejecución de obra"},
+    {name: "Valorización y liquidación de obras administración directa", text:"Hola, deseo más información sobre el curso de Valorización y liquidación de obras administración directa"},
+    {name: "Plan de gestión de seguridad y salud en obra"}
 ];
 
 //Ingenieria alimentaria
 export const modulesFoodQuality = [
+    {name: "Legislación Alimentaria", text:"Hola, deseo más información sobre el curso de Legislación Alimentaria"},
+    {name: "Calidad e Inocuidad Alimentaria", text:"Hola, deseo más información sobre el curso de Programas Pre-requisitos con base en ISO 22002-1 y BRC v.09"},
+    {name: "Higiene, Saneamiento y control de plagas en la industria alimentaria", text:"Hola, deseo más información sobre el curso de Higiene, Saneamiento y control de plagas en la industria alimentaria"},
     {name: "Interpretación e implementación de la norma ISO 31000 - Gestión de Riesgos", text:"Hola, deseo más información sobre el curso de Interpretación e implementación de la norma ISO 31000 - Gestión de Riesgos"},
     {name: "Programas Pre-requisitos con base en ISO 22002-1 y BRC v.09", text:"Hola, deseo más información sobre el curso de Programas Pre-requisitos con base en ISO 22002-1 y BRC v.09"},
     {name: "Análisis de peligros y puntos críticos de control (HACCP)", text:"Hola, deseo más información sobre el curso de Análisis de peligros y puntos críticos de control (HACCP)"},
@@ -138,12 +141,13 @@ export const modulesFoodQuality = [
     {name: "Fundamentos e Interpretación de los Sistemas de Gestión de la Calidad ISO 9001", text:"Hola, deseo más información sobre el curso de Fundamentos e Interpretación de los Sistemas de Gestión de la Calidad ISO 9001"},
     {name: "Inspección y muestreo de alimentos", text:"Hola, deseo más información sobre el curso de Inspección y muestreo de alimentos"},
     {name: "Trazabilidad y etiquetado", text:"Hola, deseo más información sobre el curso de Trazabilidad y etiquetado"},
-    {name: "Auditoria del Sistema de Gestión de Calidad e Inocuidad Alimentaria en base a la Norma ISO 19011", text:"Hola, deseo más información sobre el curso de Auditoria del Sistema de Gestión de Calidad e Inocuidad Alimentaria en base a la Norma ISO 19011"},
-    {name: "Calidad e Inocuidad alimentaria", text:"Hola, deseo más información sobre el curso de Calidad e Inocuidad alimentaria"}
+    {name: "Auditoria del Sistema de Gestión de Calidad e Inocuidad Alimentaria en base a la Norma ISO 19011", text:"Hola, deseo más información sobre el curso de Auditoria del Sistema de Gestión de Calidad e Inocuidad Alimentaria en base a la Norma ISO 19011"}
 ];
 
 //SSOMA
 export const modulesSsoma = [
+    {name: "Legislación en seguridad y salud en el trabajo", text:"Hola, deseo más información sobre el curso de Legislación en seguridad y salud en el trabajo"},
+    {name: "Implementación de sistema de gestión de SST", text:"Hola, deseo más información sobre el curso de Implementación de sistema de gestión de SST"},
     {name: "Elaboración de matriz IPERC - mapa de riesgos", text:"Hola, deseo más información sobre el curso de Elaboración de matriz IPERC - mapa de riesgos"},
     {name: "Comité de seguridad y salud en el trabajo", text:"Hola, deseo más información sobre el curso de Comité de seguridad y salud en el trabajo"},
     {name: "Seguridad en trabajo de alto riesgo", text:"Hola, deseo más información sobre el curso de Seguridad en trabajo de alto riesgo"},
@@ -153,6 +157,5 @@ export const modulesSsoma = [
     {name: "Fiscalización ambiental", text:"Hola, deseo más información sobre el curso de Fiscalización ambiental"},
     {name: "Supervisor SSOMA", text:"Hola, deseo más información sobre el curso de Supervisor SSOMA"},
     {name: "Auditor Interno SSOMA", text:"Hola, deseo más información sobre el curso de Auditor Interno SSOMA"},
-    {name: "Gestión ambiental - ISO 14001", text:"Hola, deseo más información sobre el curso de Gestión ambiental - ISO 14001"},
-    {name: "Implementación de sistema de gestión de SST", text:"Hola, deseo más información sobre el curso de Implementación de sistema de gestión de SST"}
+    {name: "Gestión ambiental - ISO 14001", text:"Hola, deseo más información sobre el curso de Gestión ambiental - ISO 14001"}
 ];

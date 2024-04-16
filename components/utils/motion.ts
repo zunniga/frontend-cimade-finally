@@ -50,6 +50,22 @@ export function slideInFromLeft(delay: number) {
     },
   });
 
+  export const staggerContainerInitial = (staggerChildren: string, delayChildren: string): Variants => ({
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: parseFloat(staggerChildren),
+        delayChildren: parseFloat(delayChildren),
+      },
+    },
+    initial: { // Define la animación inicial
+      opacity: 0, // Por ejemplo, podrías establecer la opacidad en 0
+      transition: {
+        opacity: { duration: 1 }, // Asegúrate de que la transición sea instantánea
+      },
+    },
+  });
+
   export const textContainer = {
     hidden: {
       opacity: 0,
