@@ -46,7 +46,7 @@ const Certificate: React.FC = () => {
               priority={true}
             />
             <Image
-              src={"/img/logo/logo_cert.png"}
+              src={"/img/logo/logo_login.png"}
               className="lg:w-56 lg:h-56 w-48 h-48 object-contain "
               width={800}
               height={800}

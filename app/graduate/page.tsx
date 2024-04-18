@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
 import GraduateGestionSolidos from "@/components/graduate/IngAmbientaly/GraduateGestionSolidos";
+import GraduateIngEstructural from "@/components/graduate/IngCivil/GraduateIngEstructural";
 import GraduateIrrigation from "@/components/graduate/IngAgronomy/GraduateIrrigation";
 import GraduateGestionMunicipal from "@/components/graduate/IngAmbientaly/GraduateGestionMunicipal";
 import GraduateTechnicalIrrigation from "@/components/graduate/IngAgronomy/GraduateTechnicalIrrigation";
@@ -54,9 +55,9 @@ const Graduate = () => {
           </button>
         </div>
       </div>
-      <div className=" p-5 flex flex-col bg-slate-300">
+      <div className=" p-5 flex flex-col bg-white">
         <div
-          className="text-white text-center text-3xl lg:text-4xl xl:text-5xl mb-10 lg:mt-10 font-extrabold border-b-4 p-2 "
+          className="text-white text-center text-4xl lg:text-4xl xl:text-6xl mb-10 lg:mt-10 font-extrabold  p-2 "
           style={{
             backgroundImage: "linear-gradient(to right, #0079bb, #00dbb8)",
             WebkitBackgroundClip: "text",
@@ -66,30 +67,52 @@ const Graduate = () => {
         >
           DIPLOMADOS EN INGENIERÍA VIAL
         </div>
-        <div className="mb-20 lg:mb-10">
+        <div className="mb-20 lg:mb-16">
           <GraduateTechnicalAssistant />
         </div>
-        <div className="mb-20 lg:mb-10">
+        <div className="mb-20 lg:mb-16">
           <GraduateIngVial />
         </div>
-        <div className="mb-20 lg:mb-10">
+        <div className="mb-20 lg:mb-16">
+          <GraduateIngEstructural />
+        </div>
+        <div className="mb-20 lg:mb-16">
           <GraduateIngBridge />
         </div>
-        <div className="mb-20 lg:mb-10">
+        <div className="mb-20 lg:mb-16">
           <GraduateWorksSupervision />
         </div>
-        <div className="text-white text-center text-3xl lg:text-4xl xl:text-4xl mb-6 lg:mt-6 font-extrabold border-b-4 p-2">
+
+        <div
+          className="text-white text-center text-4xl lg:text-4xl xl:text-6xl mb-10 lg:mt-10 font-extrabold  p-2 "
+          style={{
+            backgroundImage: "linear-gradient(to right, #0079bb, #00dbb8)",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            color: "transparent",
+          }}
+        >
           DIPLOMADOS EN INGENIERÍA AGRÓNOMA
         </div>
+       
         <div className="mb-20 lg:mb-10">
           <GraduateIrrigation />
         </div>
         <div className="mb-20 lg:mb-10">
           <GraduateTechnicalIrrigation />
         </div>
-        <div className="text-whitetext-center text-3xl lg:text-4xl xl:text-4xl mb-6 lg:mt-6 font-extrabold border-b-4 p-2">
+        <div
+          className="text-white text-center text-4xl lg:text-4xl xl:text-6xl mb-10 lg:mt-10 font-extrabold  p-2 "
+          style={{
+            backgroundImage: "linear-gradient(to right, #0079bb, #00dbb8)",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            color: "transparent",
+          }}
+        >
           DIPLOMADOS EN INGENIERÍA AMBIENTAL
         </div>
+       
         <div className="mb-20 lg:mb-10">
           < GraduateGestionSolidos />
         </div>
@@ -102,9 +125,18 @@ const Graduate = () => {
         <div className="mb-20 lg:mb-10">
         < GraduateGestionMunicipal />
         </div>
-        <div className="text-white text-center text-3xl lg:text-4xl xl:text-4xl mb-6 lg:mt-6 font-extrabold border-b-4 p-2">
+        <div
+          className="text-white text-center text-4xl lg:text-4xl xl:text-6xl mb-10 lg:mt-10 font-extrabold  p-2 "
+          style={{
+            backgroundImage: "linear-gradient(to right, #0079bb, #00dbb8)",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            color: "transparent",
+          }}
+        >
           DIPLOMADOS EN INGENIERÍA ALIMENTARIA
         </div>
+       
         <div className="mb-20 lg:mb-10">
         < GraduateFoodQuality />
         </div>

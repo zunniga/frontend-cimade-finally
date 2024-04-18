@@ -129,6 +129,17 @@ export const modulesWorksSupervision = [
     {name: "Plan de gestión de seguridad y salud en obra"}
 ];
 
+export const modulesIngEstructural = [
+    {name: "Diseño de Sistemas de Concreto para Contención de Tierra y Líquidos", text:"Hola, deseo más información sobre el curso de  Diseño de Sistemas de Concreto para Contención de Tierra y Líquidos"},
+    {name: "Diseño albañilería confinada", text:"Hola, deseo más información sobre el curso de  Diseño albañilería confinada"},
+    {name: "Diseño de Edificios Industriales", text:"Hola, deseo más información sobre el curso de Diseño de Edificios Industriales"},
+    {name: "Análisis y diseño de instituciones educativas", text:"Hola, deseo más información sobre el curso de Análisis y diseño de instituciones educativas"},
+    {name: "Diseño de Puentes", text:"Hola, deseo más información sobre el curso de Diseño de Puentes"},
+    {name: "Reparación y Refuerzo de Estructuras Existentes", text:"Hola, deseo más información sobre el curso de Reparación y Refuerzo de Estructuras Existentes"},
+    {name: "Tópicos Especiales en Proyectos Estructurales", text:"Hola, deseo más información sobre el curso de Tópicos Especiales en Proyectos Estructurales"},
+    {name: "Diseño Sismorresistente en edificio de concreto armado", text:"Hola, deseo más información sobre el curso de Diseño Sismorresistente en edificio de concreto armado"},
+    {name: "Diseño de Elementos en Concreto Postensado", text:"Hola, deseo más información sobre el curso de Diseño de Elementos en Concreto Postensado"},
+];
 //Ingenieria alimentaria
 export const modulesFoodQuality = [
     {name: "Legislación Alimentaria", text:"Hola, deseo más información sobre el curso de Legislación Alimentaria"},

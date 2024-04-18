@@ -7,6 +7,14 @@ import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 import { FaRegFilePdf, FaWhatsapp } from "react-icons/fa6";
 import Modal  from "@/components/share/Modal";
 import Image from "next/image";
+import { PiCertificate } from "react-icons/pi";
+import { GoClockFill } from "react-icons/go";
+import { GrPersonalComputer } from "react-icons/gr";
+import { BiSolidCalendar } from "react-icons/bi";
+import { PiCertificateLight } from "react-icons/pi";
+
+
+
 
 const GraduateAmbientaly = () => {
 const [isAccordionOpen1, setIsAccordionOpen1] = useState(false);
@@ -50,8 +58,8 @@ const [imageUrl, setImageUrl] = useState('');
             />
           </div>
           <div className="sm:w-1/2 md:px-20 sm:px-5 lg:mt-4">
-            <div className="text-testBlue font-extrabold font-poppins lg:text-3xl text-2xl mb-4">
-            INGENIERÍA DE PUENTES
+          <div className="text-testBlue  font-extrabold lg:text-4xl text-2xl mb-4">
+          INGENIERÍA DE PUENTES
             </div>
             <div className="mb-4">
               <p className="text-sm font-semibold text-gray-600 italic">
@@ -63,42 +71,22 @@ const [imageUrl, setImageUrl] = useState('');
             </div>
             <div className="grid lg:grid-cols-2 grid-cols-1 text-testBlue text-sm mb-4">
               <div className="flex items-center mb-2">
-              <Image
-                src="/INICIO.png"
-                alt="icono_promas"
-                width={20}
-                height={20}
-                priority={true}/>
+              <GoClockFill className="text-lg" />
                 <p className="font-bold ml-1">Inicio 18 de Mayo</p>
               </div>
 
               <div className="flex items-center mb-2">
-              <Image
-                src="/MODALIDAD.png"
-                alt="icono_promas"
-                width={20}
-                height={20}
-                priority={true}/>
+              <GrPersonalComputer className="text-lg" />
                 <p className="font-bold ml-1">Modalidad Online via Zoom</p>
               </div>
 
               <div className="flex items-center mb-2">
-              <Image
-                src="/DURACION.png"
-                alt="icono_promas"
-                width={20}
-                height={20}
-                priority={true}/>
+              <BiSolidCalendar className="text-lg" />
                 <p className="font-bold ml-1">4 meses</p>
               </div>
 
               <div className="flex items-center mb-2">
-              <Image
-                src="/DURACION.png"
-                alt="icono_promas"
-                width={20}
-                height={20}
-                priority={true}/>
+              <PiCertificateLight className="text-lg" />
                 <p className="font-bold ml-1">420 horas académicas (<span className="credits">26 créditos</span>)</p>
               </div>
             </div>
@@ -106,7 +94,7 @@ const [imageUrl, setImageUrl] = useState('');
               <div className="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 gap-2">
                 <div className="w-full">
                   <Link
-                    className="border-2 border-testCian flex items-center justify-center text-gray-600 font-bold rounded-xl p-2 hover:scale-105 duration-300"
+                    className="border-2 border-testBlue flex items-center justify-center text-gray-600 font-bold rounded-xl p-2 hover:scale-105 duration-300"
                     href='https://wa.me/51921814045?text=Hola,%20deseo%20más%20información%20sobre%20los%20diplomados'
                     target="_blank">
                       <div className="items-center text-xs uppercase inline-flex">
@@ -118,7 +106,7 @@ const [imageUrl, setImageUrl] = useState('');
                 <div className="w-full">
                   <button
                     onClick={handleClick}
-                    className="border-2 border-testCian w-full flex items-center justify-center mb- text-gray-600 font-bold rounded-xl p-2 hover:scale-105 duration-300"
+                    className="border-2 border-testBlue w-full flex items-center justify-center mb- text-gray-600 font-bold rounded-xl p-2 hover:scale-105 duration-300"
                     rel="noopener noreferrer">
                       <div className="items-center text-xs uppercase inline-flex">
                         <FaRegFilePdf className="text-red-500 text-lg"/>
@@ -128,17 +116,11 @@ const [imageUrl, setImageUrl] = useState('');
                 </div>
                 <div>
                   <button
-                    className="border-2 border-testCian w-full flex items-center justify-center mb-4 text-gray-600 font-bold rounded-xl p-2 hover:scale-105 duration-300"
+                    className="border-2 border-testBlue w-full flex items-center justify-center mb-4 text-gray-600 font-bold rounded-xl p-2 hover:scale-105 duration-300"
                     onClick={() => handleImageClick('/IMAGEN.png')}>
                       <div className="items-center text-xs uppercase inline-flex">
-                      <Image
-                        src="/CERTIFICADO.png"
-                        alt="icono_promas"
-                        width={800}
-                        height={800}
-                        className="h-4 w-4"
-                        priority={true}/>
-                        <h1 className="ml-1">Certificación</h1>
+                      <PiCertificateLight className="text-lg" />
+                        <h1 className="ml-1 ">Certificación</h1>
                       </div>
                   </button>
                   {showModal && (
@@ -152,7 +134,7 @@ const [imageUrl, setImageUrl] = useState('');
               <div className="z-0">
                 <button
                   onClick={toggleAccordion1}
-                  className="p-1 px-4 border flex items-center justify-between mb-4 text-gray-100 bg-testCian/75 font-bold rounded-xl w-full hover:scale-105 duration-300"
+                  className="p-1 px-4 border flex items-center justify-between mb-4 text-gray-100 bg-testBlue font-bold rounded-xl w-full hover:scale-105 duration-300"
                   style={{ zIndex: 0 }}>
                   <h1 className="hover:scale-110 duration-300 uppercase text-">Lista de Módulos</h1>
                   <div>
