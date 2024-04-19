@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Whatsapp from '@/components/whatsapp/Index';
 import {
   FaFacebookF,
   FaInstagram,
@@ -16,6 +15,7 @@ import {
   slideInFromTop,
 } from "@/components/utils/motion";
 import Link from "next/link";
+import Whatsapp from '@/components/whatsapp/Index';
 
 
 
@@ -242,7 +242,7 @@ const Home = () => {
           </button>
         </div>
       </motion.div>
-      <Whatsapp/>
+      <Whatsapp />
     </div>
   );
 };

@@ -1,9 +1,9 @@
 export const insights = [
     {
       imgUrl: '/img/graduate/test_ing.png',
-      title: 'Ingeniería Ambiental',
+      title: '',
       subtitle:
-          'Adquirirás los conocimientos necesarios para poder poner en marcha proyectos de ingeniería que cuidan el medio ambiente y su desarrollo',
+          '',
     },
     {
       imgUrl: '/img/graduate/test_ing2.png',

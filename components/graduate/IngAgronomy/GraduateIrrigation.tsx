@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-import { modulesTechnicalAssistant } from "@/components/utils/courses/course";
+import { modulesIrrigation } from "@/components/utils/courses/course";
 import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 import { FaRegFilePdf, FaWhatsapp } from "react-icons/fa6";
 import Modal  from "@/components/share/Modal";
@@ -46,8 +46,8 @@ const [imageUrl, setImageUrl] = useState('');
 
   return (
     <div id="ambientaly" className="">
-       <div className="md:px-20 flex flex-col sm:flex-row justify-center">
-          <div className="sm:w-96 mb-4 sm:mb-0">
+       <div className="md:px-20 flex flex-col sm:flex-row justify-center mb-8">
+          <div className="sm:w-96 mb-4 lg:h-80 lg:w-80 sm:mb-0">
             <Image
               className="bg-cover h-96 w-96 rounded-3xl"
               src="/img/graduates/tecnico_obras.webp"
@@ -59,7 +59,7 @@ const [imageUrl, setImageUrl] = useState('');
           </div>
           <div className="sm:w-1/2 md:px-20 sm:px-5 lg:mt-4">
           <div className="text-testBlue  font-extrabold lg:text-4xl text-2xl mb-4">
-            ASISTENTE TÉCNICO EN OBRAS
+          RIEGO Y FERTIRRIEGO
             </div>
             <div className="mb-4">
               <p className="text-sm font-semibold text-gray-600 italic">
@@ -153,7 +153,7 @@ const [imageUrl, setImageUrl] = useState('');
                 animate={{ opacity: 1, transition: { duration: 0.1} }}>
                 <div className="text-sm font-sans font-semibold">
                   <ul className="">
-                  {modulesTechnicalAssistant.map((item, index) => (
+                  {modulesIrrigation.map((item, index) => (
                     <motion.li
                       key={index}
                       initial={{ opacity: 0 }}

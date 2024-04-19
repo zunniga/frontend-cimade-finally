@@ -6,6 +6,7 @@ import SearchName from "@/components/certificate/SearchName";
 import { BsQrCodeScan } from "react-icons/bs";
 import { BsPersonVcard, BsPersonSquare } from "react-icons/bs";
 import Image from "next/image";
+import Whatsapp from '@/components/whatsapp/Index';
 //import Whatsapp from '@/components/whatsapp/Index'
 
 const Certificate: React.FC = () => {
@@ -108,7 +109,7 @@ const Certificate: React.FC = () => {
           )}
         </div>
       </div>
-
+      <Whatsapp/>
 
 
 

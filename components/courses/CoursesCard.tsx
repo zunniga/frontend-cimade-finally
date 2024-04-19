@@ -36,17 +36,12 @@ const GraduateCard: FC<InsightCardProps> = ({ imgUrl, title, subtitle, index }) 
     </div>
     <div className="w-full flex items-center justify-center px-2">
       <div className="flex-1 flex flex-col max-w-[650px]">
-        <h1 className='uppercase underline text-white text-xs font-extrabold text-left'>
-          Diplomados
-        </h1>
-        <h2 className="font-extrabold lg:text-[26px] text-[20px] text-white">
-          {title}
-        </h2>
+        
         <h3 className="mt-[16px] lg:mb-6 font-semibold lg:text-[15px] text-[13px] text-gray-200">
           {subtitle}
         </h3>
-        <Link href="/graduate" className='uppercase text-xs font-extrabold text-white border p-2 md:mt-2 mt-6 mb-4 w-32 rounded-lg hover:scale-110 duration-200 hover:bg-customPurple'>
-          Ver diplomado
+        <Link href="/graduate" className='uppercase text-xs text-center font-extrabold text-white border p-2 md:mt-2 mt-6 mb-4 w-32 rounded-lg hover:scale-110 duration-200 hover:bg-customPurple'>
+          Ver curso
         </Link>
       </div>
     </div>

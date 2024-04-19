@@ -18,7 +18,7 @@ const Whatsapp = () => {
         alt="whatsAap"
         width={60}
         height={60}
-        className='mt-3 ml-52 lg:mb-3 hover:scale-125 duration-300'/>
+        className='boton-w '/>
     </Link>
     </div>
     </div>

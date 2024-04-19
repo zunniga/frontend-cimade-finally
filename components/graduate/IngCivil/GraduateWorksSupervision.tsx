@@ -47,8 +47,8 @@ const [imageUrl, setImageUrl] = useState('');
 
   return (
     <div id="ambientaly" className="">
-       <div className="md:px-20 flex flex-col sm:flex-row justify-center">
-          <div className="sm:w-96 mb-4 sm:mb-0">
+       <div className="md:px-20 flex flex-col sm:flex-row justify-center mb-8">
+          <div className="sm:w-96 mb-4 lg:h-80 lg:w-80 sm:mb-0">
             <Image
               className="bg-cover h-96 w-96 rounded-3xl"
               src="/img/graduates/tecnico_obras.webp"

@@ -7,6 +7,7 @@ import { insights } from '@/components/utils/constants/index';
 import { staggerContainer } from '../utils/motion';
 import GraduateCard  from './GraduateCard';
 import { TitleText, TypingText } from '../share/CustomText'
+import Link from 'next/link';
 
 const variants = staggerContainer("0.1s", "0.1s");
 
@@ -26,10 +27,21 @@ const Graduate: React.FC = () => (
         {insights.map((item, index: number) => (
           <GraduateCard key={`insight-${index}`} {...item} index={index + 1} />
         ))}
+        
+        
       </div>
-      
+      <div className="flex justify-center mt-8">
+        <button className="uppercase text-sm font-light flex items-center justify-center  text-white p-2 md:mt-2 mt-6 mb-4 w-52 h-16 rounded-lg border border-testCian/50 hover:bg-testCian/10">
+          VER MÁS
+        </button>
+      </div>
+
+
+
   </div>
+  
   </section>
+  
 );
 
 export default Graduate;

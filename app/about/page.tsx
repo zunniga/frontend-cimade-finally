@@ -6,6 +6,7 @@ import Image from "next/image";
 import { staggerContainerInitial } from "@/components/utils/motion";
 import styles from "@/styles/index";
 import { TitleText, TypingText } from "@/components/share/CustomText";
+import Whatsapp from "@/components/whatsapp/Index";
 import "./Styles.css";
 
 const About = () => {
@@ -41,25 +42,24 @@ const About = () => {
               <div className="absolute top-0 left-0 w-full h-full bg-testBlue opacity-60"></div>
               {/* <span id="blackOverlay" className="w-full h-full absolute opacity-60 bg-gray-800"></span> */}
             </div>
-            
+
             <div className="relative mx-auto max-w-screen-xl p-2 text-white">
-            <motion.div
-                  variants={variants}
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: false, amount: 0.25 }}
-                  className= {`${styles.innerWidth}`}
-                >
-                  <TypingText
-                    title="Acerca de nosotros"
-                    textStyles="text-left text-[#fff] pt-24 font-extrabold text-4xl lg:text-6xl mt-10"
-                    
-                  />
-                </motion.div>
+              <motion.div
+                variants={variants}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.25 }}
+                className={`${styles.innerWidth}`}
+              >
+                <TypingText
+                  title="Acerca de nosotros"
+                  textStyles="text-left text-[#fff] pt-24 font-extrabold text-4xl lg:text-6xl mt-10"
+                />
+              </motion.div>
               <p className="font-semibold text-lg mt-2">
-                ¡Siempre comprometidos con tu educación , conócenos un poco más !
+                ¡Siempre comprometidos con tu educación , conócenos un poco más
+                !
               </p>
-             
             </div>
           </div>
           <section className="relative bg-slate-50">
@@ -140,7 +140,7 @@ const About = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: false, amount: 0.25 }}
-                  className= {`${styles.innerWidth}`}
+                  className={`${styles.innerWidth}`}
                 >
                   <TypingText
                     title="Nuestros Valores"
@@ -150,54 +150,47 @@ const About = () => {
 
                 <div className="ag-format-container">
                   <div className="ag-courses_box">
-                    
                     <div className="ag-courses_item">
                       <a href="#" className="ag-courses-item_link">
                         <div className="ag-courses-item_bg"></div>
- 
+
                         <div className="ag-courses-item_date-box font-semibold">
-                        Excelencia
+                          Excelencia
                         </div>
                         <div className="ag-courses-item_title">
-                         Compromiso con la calidad, soluciones efectivas, superación de expectativas.
+                          Compromiso con la calidad, soluciones efectivas,
+                          superación de expectativas.
                         </div>
-
-                        
                       </a>
                     </div>
 
                     <div className="ag-courses_item">
                       <a href="#" className="ag-courses-item_link">
                         <div className="ag-courses-item_bg"></div>
- 
+
                         <div className="ag-courses-item_date-box font-semibold">
-                        Adaptabilidad 
+                          Adaptabilidad
                         </div>
                         <div className="ag-courses-item_title">
-                        Flexibilidad, receptividad a retroalimentación, agilidad en implementación de soluciones.
+                          Flexibilidad, receptividad a retroalimentación,
+                          agilidad en implementación de soluciones.
                         </div>
-
-                        
                       </a>
                     </div>
 
                     <div className="ag-courses_item">
                       <a href="#" className="ag-courses-item_link">
                         <div className="ag-courses-item_bg"></div>
- 
+
                         <div className="ag-courses-item_date-box font-semibold">
-                        Integridad 
+                          Integridad
                         </div>
                         <div className="ag-courses-item_title">
-                        Transparencia, ética profesional, cumplimiento de compromisos.
+                          Transparencia, ética profesional, cumplimiento de
+                          compromisos.
                         </div>
-
-                        
                       </a>
                     </div>
-
-                   
-                    
                   </div>
                 </div>
               </div>
@@ -205,6 +198,7 @@ const About = () => {
           </section>
         </div>
         <div className="container mx-auto px-4"></div>
+        <Whatsapp />
       </div>
     </div>
   );

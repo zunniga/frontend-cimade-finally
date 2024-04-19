@@ -20,6 +20,8 @@ import styles from "@/styles/index";
 import { motion, Variants, TargetAndTransition } from "framer-motion";
 import { zoomInFrom } from "@/components/utils/motion";
 
+
+
 const variants = staggerContainerInitial("0.1s", "0.1s");
 
 const Graduate = () => {
@@ -101,6 +103,27 @@ const Graduate = () => {
         <div className="mb-20 lg:mb-10">
           <GraduateTechnicalIrrigation />
         </div>
+
+
+        <div
+          className="text-white text-center text-4xl lg:text-4xl xl:text-6xl mb-10 lg:mt-10 font-extrabold  p-2 "
+          style={{
+            backgroundImage: "linear-gradient(to right, #0079bb, #00dbb8)",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            color: "transparent",
+          }}
+        >
+          DIPLOMADOS PARA PROFESIONALES EN GENERAL
+        </div>
+       
+        <div className="mb-20 lg:mb-10  p-2">
+        < GraduateSsoma />
+        </div>
+      
+
+
+
         <div
           className="text-white text-center text-4xl lg:text-4xl xl:text-6xl mb-10 lg:mt-10 font-extrabold  p-2 "
           style={{
@@ -140,9 +163,7 @@ const Graduate = () => {
         <div className="mb-20 lg:mb-10">
         < GraduateFoodQuality />
         </div>
-        <div className="mb-20 lg:mb-10 border-t-4 p-2">
-        < GraduateSsoma />
-        </div>
+        
       </div>
       <Whatsapp />
     </section>
