@@ -99,7 +99,7 @@ const [imageUrl, setImageUrl] = useState('');
                     target="_blank">
                       <div className="items-center text-xs uppercase inline-flex">
                         <FaWhatsapp className="text-green-500 text-lg"/>
-                        <h1 className="ml-1">Mas información</h1>
+                        <h1 className="ml-1 ">Nuestra Certificación</h1>
                       </div>
                   </Link>
                 </div>

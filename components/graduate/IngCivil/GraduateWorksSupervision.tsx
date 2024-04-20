@@ -121,7 +121,7 @@ const [imageUrl, setImageUrl] = useState('');
                     onClick={() => handleImageClick('/IMAGEN.png')}>
                       <div className="items-center text-xs uppercase inline-flex">
                       <PiCertificateLight className="text-lg" />
-                        <h1 className="ml-1 ">Certificación</h1>
+                      <h1 className="ml-1 ">Nuestra Certificación</h1>
                       </div>
                   </button>
                   {showModal && (

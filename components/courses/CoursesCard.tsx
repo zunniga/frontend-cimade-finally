@@ -18,9 +18,9 @@ const GraduateCard: FC<InsightCardProps> = ({ imgUrl, title, subtitle, index }) 
   initial="hidden"
   animate="visible"
   exit = "hidden"
-  className="flex md:flex-col flex-col gap-4 px-2 py-2 mb-8 mx-auto rounded-2xl bg-secondaryCian hover:cursor-pointer "
+  className="fflex md:flex-col flex-col gap-4 px-2 py-2 mb-8 mx-auto rounded-2xl bg-testCian/50 border border-testCian hover:bg-testCian/10   hover:cursor-pointer "
 
-    whileHover={{ scale: 1.1, backgroundColor: '#1DDAB8' }}
+    whileHover={{ scale: 1.1, backgroundColor: '#3DA997' }}
     whileTap={{ scale: 1 }}
    
   >
@@ -35,12 +35,9 @@ const GraduateCard: FC<InsightCardProps> = ({ imgUrl, title, subtitle, index }) 
     />
     </div>
     <div className="w-full flex items-center justify-center px-2">
-      <div className="flex-1 flex flex-col max-w-[650px]">
-        
-        <h3 className="mt-[16px] lg:mb-6 font-semibold lg:text-[15px] text-[13px] text-gray-200">
-          {subtitle}
-        </h3>
-        <Link href="/graduate" className='uppercase text-xs text-center font-extrabold text-white border p-2 md:mt-2 mt-6 mb-4 w-32 rounded-lg hover:scale-110 duration-200 hover:bg-customPurple'>
+      <div className="flex-1 flex flex-col max-w-[650px] items-center">
+      
+        <Link href="/graduate" className='uppercase text-xs font-extrabold flex justify-center bg-transparent text-white border p-2 md:mt-2 mt-6 mb-4 w-36 rounded-lg hover:scale-110 duration-200 hover:bg-testBlue'>
           Ver curso
         </Link>
       </div>

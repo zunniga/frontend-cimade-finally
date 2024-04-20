@@ -94,7 +94,7 @@ const [imageUrl, setImageUrl] = useState('');
               <div className="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 gap-2">
                 <div className="w-full">
                   <Link
-                    className="border-2 border-testBlue flex items-center justify-center text-gray-600 font-bold rounded-xl p-2 hover:scale-105 duration-300"
+                    className="border-2 border-testBlue flex items-center justify-center text-gray-600 font-bold  rounded-xl p-2 hover:scale-105 duration-300"
                     href='https://wa.me/51921814045?text=Hola,%20deseo%20más%20información%20sobre%20los%20diplomados'
                     target="_blank">
                       <div className="items-center text-xs uppercase inline-flex">
@@ -120,7 +120,7 @@ const [imageUrl, setImageUrl] = useState('');
                     onClick={() => handleImageClick('/IMAGEN.png')}>
                       <div className="items-center text-xs uppercase inline-flex">
                       <PiCertificateLight className="text-lg" />
-                        <h1 className="ml-1 ">Certificación</h1>
+                        <h1 className="ml-1 ">Nuestra Certificación</h1>
                       </div>
                   </button>
                   {showModal && (

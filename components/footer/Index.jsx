@@ -73,7 +73,7 @@ const Footer = () => {
                   >Inicio</Link>
               </h1>
               <p className="mb-4">
-                <Link href="/certificate" className="font-semibold text-gray-100 hover:underline"
+                <Link href="/certs" className="font-semibold text-gray-100 hover:underline"
                   >Certificado </Link>
               </p>
               <p className="mb-4">
