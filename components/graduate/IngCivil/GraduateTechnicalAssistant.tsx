@@ -34,13 +34,13 @@ const [imageUrl, setImageUrl] = useState('');
   };
 
   const handleClick = () => {
-    const newWindow = window.open('/BROCHURE/ESTUDIO_IMPACTO_AMBIENTAL.pdf');
+    const newWindow = window.open('/brochuress/BROCHURE ASISTENTE TECNICO EN OBRAS.pdf');
     setOpenWindow(newWindow);
 
     // Descargar el archivo PDF
     const link = document.createElement('a');
-    link.href = '/BROCHURE/ESTUDIO_IMPACTO_AMBIENTAL.pdf';
-    link.download = 'ESTUDIO_IMPACTO_AMBIENTAL.pdf';
+    link.href = '/brochuress/BROCHURE ASISTENTE TECNICO EN OBRAS.pdf';
+    link.download = 'BROCHURE ASISTENTE TECNICO EN OBRAS.pdf';
     link.click();
   };
 
