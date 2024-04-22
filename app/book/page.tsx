@@ -60,7 +60,7 @@ const Book = () => {
       <div className='max-w-screen-lg mx-auto'>
         <Image
           src="/img/logo/logo_login.png"
-          alt='logo_sayan'
+          alt='logo_binex'
           width={800}
           height={800}
           className='flex justify-center mx-auto mb-10 mt-32 p-2'
