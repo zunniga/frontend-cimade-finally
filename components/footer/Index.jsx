@@ -13,14 +13,14 @@ import "./styles.css";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer ">
       <div className="waves">
         <div className="wave" id="wave1"></div>
         <div className="wave" id="wave2"></div>
         <div className="wave" id="wave3"></div>
         <div className="wave" id="wave4"></div>
       </div>
-      <div className="border-b-2 border-white p-1 l  pt-5 pb-5">
+      <div className="border-b-2 border-white p-1 l  pt-2 pb-5">
         <div className="container mx-auto px-10">
           <div className="flex items-center justify-center lg:justify-between">
             <div className="mr-12 hidden lg:block">
@@ -221,7 +221,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="p-6 text-center">
+      <div className="-top-10 text-center">
         <span>© 2024 Copyright:</span>
         <Link className="font-semibold text-neutral-300" href="/">
           {" "}
