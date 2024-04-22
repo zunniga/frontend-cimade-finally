@@ -12,7 +12,7 @@ interface InsightCardProps {
 }
 
 const GraduateCard: FC<InsightCardProps> = ({ imgUrl, title, subtitle, index }) => (
-<Link href="/graduate">
+  
   <motion.div
   variants={zoomInFrom}
   initial="hidden"
@@ -25,6 +25,9 @@ const GraduateCard: FC<InsightCardProps> = ({ imgUrl, title, subtitle, index }) 
 
 
   >
+    
+
+    
 
     <div className="flex justify-center ">
     <Image
@@ -44,8 +47,9 @@ const GraduateCard: FC<InsightCardProps> = ({ imgUrl, title, subtitle, index }) 
         </Link>
       </div>
     </div>
+  
   </motion.div>
-</Link>
+  
 );
 
 export default GraduateCard;
