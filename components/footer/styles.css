@@ -5,9 +5,10 @@
 .footer {
   position: relative;
   width: 100%;
+ 
  background: linear-gradient(to bottom, #2878b7, #124654);
 
-  min-height: 100px;
+  min-height: 400px;
   padding: 3% 5%;
   text-align: center;
   color: #fff;

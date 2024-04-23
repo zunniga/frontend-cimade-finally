@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/hero/Index.jsx", "components/presentation/page.jsx", "components/navbar/Index.tsx", "components/courses/Courses.tsx", "app/about/page.tsx", "components/certificate/SearchCode.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/hero/Index.jsx", "components/presentation/page.jsx", "components/navbar/Index.tsx", "components/courses/Courses.tsx", "app/about/page.tsx", "components/certificate/SearchCode.tsx", "components/contacts/Index.tsx"],
   "exclude": ["node_modules"]
 }

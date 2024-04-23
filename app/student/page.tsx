@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useMemo, useState } from "react";
 import axios from "axios";
+import * as XLSX from 'xlsx';
 import { useRouteData } from "@/hooks/hooks";
 import tokenConfig, { URL } from "@/components/utils/format/tokenConfig";
 import { FaRegEdit } from "react-icons/fa";
@@ -20,6 +21,8 @@ import SearchStudent from "@/components/student/SearchStudent";
 import { logout } from "@/components/utils/auth.server";
 import DuplicatedCode from "@/components/student/VerifyCode";
 import Link from "next/link";
+import { BsFiletypeXls } from "react-icons/bs";
+
 
 const Student = () => {
   const [isActive, setIsActive] = useState(false);
@@ -187,6 +190,32 @@ const Student = () => {
     setIsDuplicatedCodesModalOpen(false);
   };
 
+ //exportarEnExcel
+ const handleExportToExcel = async () => {
+  try {
+    if (!memoryData) {
+      console.error('No hay datos disponibles para exportar.');
+      return;
+    }
+    const dataWithoutId = memoryData.map(student => {
+      const { id, ...rest } = student;
+      return rest;
+    });
+    
+
+    const wb = XLSX.utils.book_new();
+    const ws = XLSX.utils.json_to_sheet(dataWithoutId);
+    XLSX.utils.book_append_sheet(wb, ws, 'participantesBinex');
+    XLSX.writeFile(wb, 'participantesBinex.xlsx');
+    console.log('Datos exportados exitosamente a Excel.');
+  } catch (error) {
+    console.error('Error al exportar datos a Excel:', error);
+  }
+};
+
+
+
+
   //Logout
   const handleLogout = async () => {
     await logout();
@@ -283,7 +312,7 @@ const Student = () => {
   };
 
   return (
-    <section className="p-2">
+    <section className="p-2 mb-24 bg-black">
       {/* <div className="text-center text-gray-500 lg:p-6 text-2xl font-semibold mb-10 mt-8"> */}
 
       <div className="text-center text-white lg:p-6 p-0 mt-32 mb-10 text-2xl font-semibold ">
@@ -315,6 +344,14 @@ const Student = () => {
               onClose={handleCloseDuplicatedCode}
             />
           )}
+
+<button
+            type="button"
+            className="text-green-600 uppercase hover:text-white border-2 border-green-600 hover:bg-green-600 focus:ring-4 focus:outline-none font-semibold rounded-lg text-xs px-3 py-3 text-center md:w-auto dark:hover:text-white dark:focus:ring-[#BFE9FB] inline-flex items-center hover:scale-110 duration-300"
+            onClick={handleExportToExcel}>
+            <BsFiletypeXls className="mr-1 text-lg" />
+            Descargar
+          </button>
         </div>
 
         <div className="flex justify-center mt-2 lg:mt-2 mb-1">

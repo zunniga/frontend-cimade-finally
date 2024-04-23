@@ -13,7 +13,7 @@ import UserUpdate from '@/components/user/userUpdate';
 import UserDelete from '@/components/user/userDelete';
 import { FiLogOut } from 'react-icons/fi';
 import { logout } from '@/components/utils/auth.server';
-
+import { useNavigate } from 'react-router-dom';
 
 const User = () => {
   const [userData, setUserData] = useState<UserData[]>();
@@ -46,7 +46,9 @@ const User = () => {
     }
   };
 
- 
+  useEffect(() => {
+    onSubmit();
+  }, []);
 
   //UpdateUser
   const handleEditClick = (userId: number) => {
@@ -100,12 +102,12 @@ const User = () => {
   };
 
   return (
-      <section id="user">
-        <div className='flex justify-center mt-32 mb-8'>
-        <a className="uppercase border border-testCian rounded-2xl shadow-2xl text-center text-xl font-bold text-white p-4">
+      <section id="user" className='mb-28'>
+        <div className='flex justify-center mt-28 mb-8 text-center text-white lg:p-6 p-0 text-2xl font-semibold'>
+        <a className="border border-testCian shadow-2xl p-4 rounded-xl">
           Registro de usuarios</a>
         </div>
-        <div className='flex justify-end mb-6'>
+        <div className='flex justify-end'>
         <button
           type="button"
           className="text-[#006eb0] uppercase hover:text-white border-2 border-[#006eb0] hover:bg-[#006eb0] focus:ring-4 focus:outline-none font-semibold rounded-lg text-xs px-3 py-2 text-center me-2 dark:hover:text-white dark:focus:ring-[#BFE9FB] inline-flex items-center"
@@ -123,14 +125,14 @@ const User = () => {
         <UserRegister onCreateSuccess={handleRegisterSuccess} onCloseModal={handleCloseCreateForm} />
         )}
         {dataLoading && userData && (
-          <div className="overflow-x-auto bg-white p-2 mt- shadow-2xl">
+          <div className="overflow-x-auto bg-white p-2 mt-20 shadow-2xl">
             <table className="w-full text-sm text-center rtl:text-right text-gray-400">
               <thead className="text-xs text-gray-500 uppercase bg-gray-300">
                 <tr>
                   <th scope="col" className="px-6 py-3">
                     #
                   </th>
-                  <th scope="col" className="px-6 py-3 ">
+                  <th scope="col" className="px-6 py-3">
                     Email
                   </th>
                   <th scope="col" className="px-6 py-3">
