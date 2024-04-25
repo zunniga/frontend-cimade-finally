@@ -101,16 +101,33 @@ const SearchName:React.FC<SearchCodeProps> = ({ onSearchCode }) => {
             <Image src={'/img/logo/logo_binexx.png'} alt='binex' className="lg:w-40 lg:h-32 w-36 h-28 mt-[42px] object-contain" width={800} height={800}  priority={true}/>
             <Image src={'/img/certificate/unp.png'} alt='binex' className="lg:w-40 lg:h-40 w-36 h-36 mt-[18px] object-contain" width={800} height={800}  priority={true}/>
           </div>
-          <div className="max-w-md mx-auto p-6 bg-white rounded-md">
+          <div className="max-w-md mx-auto  bg-white rounded-md">
             {tableRows.map((row, index) => (
               <div key={index} className="mb-4">
-               <div className="flex items-center text-gray-100 text-sm p-1 lg:ml-5 ml-0 lg:w-80 w-full rounded-lg bg-slate-600 font-semibold">
+               <div className="inline-flex items-center text-gray-100 text-sm p-1  lg:w-80 w-full rounded-lg bg-slate-600 font-semibold">
                 {row.imgSrc && <Image src={row.imgSrc} width={150} height={150} alt={row.label} className="flex lg:w-5 lg:h-5 w-5 h-5 object-contain ml-1" />}
                 <div className='flex-1 text-center'>
                 {row.label}
                 </div>
               </div>
-                <div className="text-gray-600 mt-3 mb-5 text-sm font-semibold">{row.value}</div>
+              <div className="flex justify-center text-gray-600 mt-3 mb-5 md:text-sm text-xs md:w-[410px] px-[2px] font-semibold">
+                  {row.label === 'Organizado por:' ? (
+                    <span>
+                      {row.value && (
+                        <span>
+                          {row.value.split(' ').map((word, i, arr) => (
+                            <React.Fragment key={i}>
+                              {i !== arr.length - 3 ? word + ' ' : word + ' '}
+                              {i === arr.length - 5 && <br />}
+                            </React.Fragment>
+                          ))}
+                        </span>
+                      )}
+                    </span>
+                  ) : (
+                    <span>{row.value}</span>
+                  )}
+                </div>
               </div>
             ))}
           </div>
