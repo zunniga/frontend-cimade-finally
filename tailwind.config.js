@@ -33,11 +33,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primaryBlue: '#0079bb',
-        secondaryCian: '#039f85',
+        primaryBlue: '#002e79',
+        secondaryCian: '#ff00d4',
+        secondaryPink: '#006eb0',
 
-        testBlue : '#0079bb',
-        testCian : '#00dbb8',
+        testBlue : '#002e79',
+        testCian : '#ff00d4',
         intersting : "#00507c"
 
        

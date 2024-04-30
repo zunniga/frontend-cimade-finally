@@ -14,20 +14,20 @@ function Navbar() {
   const [navbar, setNavbar] = useState(false);
   return (
     <div className="">
-      <nav className="w-full top-0 left-0 right-0  z-50 absolute">
-        <div className="max-w-screen-xl flex flex-wrap  items-center justify-center mx-auto p-0.5 backdrop-blur-md">
-          <div className="md:text-right text-center font-semibold w-full border-b border-[#00dbb8] py-1 mb-4">
+      <nav className="w-full bg-testBlue top-0 left-0 right-0 z-50 absolute">
+        <div className="max-w-screen-xl flex flex-wrap  items-center justify-center mx-auto p-0.5 backdrop-blur-md ">
+          <div className="md:text-right text-center font-semibold w-full border-b border-white py-1 mb-4">
             <Link
               href="/certs"
-              className=" mr-4 p-2 hover:bg-testCian/20 hover:text-white rounded-sm font-extralight"
+              className=" mr-4 p-2  hover:bg-testCian/20 hover:text-white rounded-sm font-extralight"
             >
               Verificar certificado
             </Link>
             <Link
               href="https://site2.q10.com/login?ReturnUrl=%2F&aplentId=0959465f-37c3-4032-803b-bbfc499af7a3"
-              className=" mr-3 p-2 hover:bg-testCian/20 hover:text-white rounded-sm font-extralight"
+              className=" mr-3   p-2 hover:bg-testCian/20 hover:text-white rounded-sm font-extralight"
             >
-              Aula Virtual
+              Aula Virtuall
             </Link>
           </div>
         </div>
@@ -38,11 +38,11 @@ function Navbar() {
               {/* LOGO */}
               <Link href="/">
                 <Image
-                  src="/img/logo/logobinex.png"
+                  src="/img/logo/logo_cimade.webp"
                   width={800}
                   height={800}
                   alt="binex_logo"
-                  className="w-36 h-10"
+                  className="w-48 h-10"
                   priority={true}
                 />
               </Link>
@@ -80,27 +80,27 @@ function Navbar() {
           <div className={`hidden md:block ${navbar ? "block" : "hidden"}`}>
             <div className="flex-1 justify-self-center rounded-lg pb-3 mt-2">
               <ul className="h-screen md:h-12 lg:text-sm md:text-sm text-xl items-center justify-center md:flex  ">
-              <li className="font-extralight text-xl text-gray-100 lg:mb-0 md:mb-0 mb-6 py-1 px-6 text-center border border-transparent hover:border-testCian hover:bg-white/15 rounded transition-transform transform hover:scale-125">
+              <li className="font-extralight text-xl text-white lg:mb-0 md:mb-0 mb-6 py-1 px-6 text-center border border-transparent hover:border-testCian hover:bg-white/15 rounded transition-transform transform hover:scale-125">
                   <Link href="/" onClick={() => setNavbar(!navbar)}>
                     Inicio
                   </Link>
                 </li>
-                <li className="font-extralight text-xl text-gray-100 lg:mb-0 md:mb-0 mb-6 py-1 px-6 text-center border border-transparent hover:border-testCian hover:bg-white/15 rounded transition-transform transform hover:scale-125">
+                <li className="font-extralight text-xl text-white lg:mb-0 md:mb-0 mb-6 py-1 px-6 text-center border border-transparent hover:border-testCian hover:bg-white/15 rounded transition-transform transform hover:scale-125">
                   <Link href="/certs" onClick={() => setNavbar(!navbar)}>
                     Certificado
                   </Link>
                 </li>
-                <li className="font-extralight text-xl text-gray-100 lg:mb-0 md:mb-0 mb-6 py-1 px-6 text-center border border-transparent hover:border-testCian hover:bg-white/15 rounded transition-transform transform hover:scale-125">
+                <li className="font-extralight text-xl text-white lg:mb-0 md:mb-0 mb-6 py-1 px-6 text-center border border-transparent hover:border-testCian hover:bg-white/15 rounded transition-transform transform hover:scale-125">
                   <Link href="/graduate" onClick={() => setNavbar(!navbar)}>
                     Diplomados
                   </Link>
                 </li>
-                <li className="font-extralight text-xl text-gray-100 lg:mb-0 md:mb-0 mb-6 py-1 px-6 text-center border border-transparent hover:border-testCian hover:bg-white/15 rounded transition-transform transform hover:scale-125">
+                <li className="font-extralight text-xl text-white lg:mb-0 md:mb-0 mb-6 py-1 px-6 text-center border border-transparent hover:border-testCian hover:bg-white/15 rounded transition-transform transform hover:scale-125">
                   <Link href="/about" onClick={() => setNavbar(!navbar)}>
                     Nosotros
                   </Link>
                 </li>
-                <li className="font-extralight text-xl text-gray-100 lg:mb-0 md:mb-0 mb-6 py-1 px-6 text-center border border-transparent hover:border-testCian hover:bg-white/15 rounded transition-transform transform hover:scale-125">
+                <li className="font-extralight text-xl text-white                      lg:mb-0 md:mb-0 mb-6 py-1 px-6 text-center border border-transparent hover:border-testCian hover:bg-white/15 rounded transition-transform transform hover:scale-125">
                   <Link href="/" onClick={() => setNavbar(!navbar)}>
                     ¡Inscribete!
                   </Link>

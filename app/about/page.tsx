@@ -144,7 +144,7 @@ const About = () => {
                 >
                   <TypingText
                     title="Nuestros Valores"
-                    textStyles="text-center text-[#0079bb] pt-24"
+                    textStyles="text-center  text-[#002e79] pt-24"
                   />
                 </motion.div>
 
