@@ -18,9 +18,9 @@ const GraduateCard: FC<InsightCardProps> = ({ imgUrl, title, subtitle, index }) 
   initial="hidden"
   animate="visible"
   exit = "hidden"
-  className="flex md:flex-col flex-col gap-4 px-2 py-2 mb-8 mx-auto rounded-2xl bg-testCian/50 border border-testCian hover:bg-testCian/10   hover:cursor-pointer "
+  className="flex md:flex-col flex-col gap-4 px-2 py-2 mb-8 mx-auto rounded-2xl bg-testBlue/50 border border-testCian hover:bg-testBlue/10   hover:cursor-pointer "
 
-    whileHover={{ scale: 1.1, backgroundColor: '#3DA997' }}
+    whileHover={{ scale: 1.1, backgroundColor: '#002e79' }}
     whileTap={{ scale: 1 }}
 
 

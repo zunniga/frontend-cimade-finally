@@ -34,7 +34,7 @@ const texts = [
 
 const tittles = [
   {
-    tittle1: "Transforma tu Futuro con Binex",
+    tittle1: "Transforma tu Futuro con Cimade",
     color1: "from-[#002e79] to-[#006eb0]",
   },
   {
@@ -167,7 +167,7 @@ const Home = () => {
         >
           <h1>
             <p
-              className={`mt-6 lg:text-[83px] md:text-[45px] text-[42px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r text-center ${tittle.color1}`}
+              className={`mt-6 lg:text-[53px] md:text-[45px] text-[42px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r text-center ${tittle.color1}`}
             >
               {tittle.tittle1}
             </p>
@@ -183,7 +183,7 @@ const Home = () => {
         >
           <h1>
             <p
-              className={`mt-6 lg:text-[80px] text-[42px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r pb-4 ${tittle.color2}`}
+              className={`mt-6 lg:text-[530px] text-[42px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r pb-4 ${tittle.color2}`}
             >
               {tittle.tittle2}
             </p>
