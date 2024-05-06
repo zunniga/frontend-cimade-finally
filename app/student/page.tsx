@@ -205,8 +205,8 @@ const Student = () => {
 
     const wb = XLSX.utils.book_new();
     const ws = XLSX.utils.json_to_sheet(dataWithoutId);
-    XLSX.utils.book_append_sheet(wb, ws, 'participantesBinex');
-    XLSX.writeFile(wb, 'participantesBinex.xlsx');
+    XLSX.utils.book_append_sheet(wb, ws, 'database_cimade');
+    XLSX.writeFile(wb, 'database_cimade.xlsx');
     console.log('Datos exportados exitosamente a Excel.');
   } catch (error) {
     console.error('Error al exportar datos a Excel:', error);
@@ -331,7 +331,7 @@ const Student = () => {
           </div>
           <button
             type="button"
-            className="text-[#006eb0] uppercase hover:text-white border-2 border-[#006eb0] hover:bg-[#006eb0] focus:ring-4 focus:outline-none font-semibold rounded-lg text-xs px-3 py-3 text-center md:w-auto dark:hover:text-white dark:focus:ring-[#BFE9FB] inline-flex items-center"
+            className="text-[#006eb0] uppercase hover:text-white border-2 border-[#006eb0] hover:bg-[#006eb0] focus:ring-4 focus:outline-none font-semibold rounded-lg text-xs px-3 py-3 text-center md:w-auto dark:hover:text-white dark:focus:ring-[#BFE9FB] inline-flex items-center mr-2"
             onClick={handleOpenDuplicatedCode}
           >
             <GrDocumentVerified className="mr-1 text-lg" />
@@ -549,7 +549,7 @@ const Student = () => {
           </table>
 
           <nav
-            className="mt-5 flex items-center flex-col sm:flex-row justify-between text-sm"
+            className="mt-5 text-slate-700 flex items-center flex-col sm:flex-row justify-between text-sm"
             aria-label="Page navigation example"
           >
             <p>

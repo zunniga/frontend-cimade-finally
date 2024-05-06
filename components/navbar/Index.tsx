@@ -38,7 +38,7 @@ function Navbar() {
               {/* LOGO */}
               <Link href="/">
                 <Image
-                  src="/img/logo/logo_cimade.webp"
+                  src="/img/logo/LOGO-BLANCO.png"
                   width={800}
                   height={800}
                   alt="binex_logo"

@@ -13,13 +13,8 @@ import "./styles.css";
 
 const Footer = () => {
   return (
-    <footer className="footer ">
-      <div className="waves">
-        <div className="wave" id="wave1"></div>
-        <div className="wave" id="wave2"></div>
-        <div className="wave" id="wave3"></div>
-        <div className="wave" id="wave4"></div>
-      </div>
+    <footer className="footer mt-96">
+      
       <div className="border-b-2 border-white p-1 l  pt-2 pb-5">
         <div className="container mx-auto px-10">
           <div className="flex items-center justify-center lg:justify-between">
@@ -73,7 +68,7 @@ const Footer = () => {
             <div className="">
               <h6 className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
                 <Image
-                  src="/img/logo/logobinex.png"
+                  src="/img/logo/LOGO-BLANCO.png"
                   alt="logo_binex"
                   width={800}
                   height={800}
@@ -196,7 +191,7 @@ const Footer = () => {
                   height={20}
                 />
                 <button className="hover:text-primarygreen hover:scale-100 duration-300 text">
-                  capacitaciones@binex.edu.pe
+                  capacitaciones@cimade.edu.pe
                 </button>
               </a>
 
@@ -213,7 +208,7 @@ const Footer = () => {
                   height={20}
                 />
                 <button className=" text hover:text-primarygreen hover:scale-100 duration-300">
-                  +51 984 040 264
+                  +51 916 382 243
                 </button>
               </a>
             </div>
@@ -225,7 +220,7 @@ const Footer = () => {
         <span>© 2024 Copyright:</span>
         <Link className="font-semibold text-neutral-300" href="/">
           {" "}
-          Binex Educación Continua
+          Corporación Cimade
         </Link>
       </div>
     </footer>

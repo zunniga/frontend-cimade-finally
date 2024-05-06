@@ -85,7 +85,7 @@ const CreateStudentForm: React.FC<CreateStudentFormProps> = ({ onCloseModal, onC
       <div className="mb-4">
           <label className="text-sm font-bold">DNI: </label>
           <input {...register('documentNumber', {required: true})}
-          className={`border bg-slate-200 text-gray-950 border-testCian rounded-lg p-1 lg:w-36 w-24 ${errors?.documentNumber ? 'border-testCian  ' : ''}`} />
+          className={`border bg-slate-200 text-slate-800 border-testCian rounded-lg p-1 lg:w-36 w-24 ${errors?.documentNumber ? 'border-testCian  ' : ''}`} />
             {errors?.documentNumber && (
               <span className="text-xs font-mono block text-red-400">{errors.documentNumber.message}</span>
             )}

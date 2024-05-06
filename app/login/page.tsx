@@ -53,7 +53,7 @@ const Login: React.FC = () => {
   const onSubmit = async () => {
     try {
       const response = await axios.post(
-        "https://backend.binex.edu.pe/api/v1/user/login",
+        "http://localhost:8000/api/v1/user/login",
         form
       );
       if (response.data.token) {
@@ -96,12 +96,12 @@ const Login: React.FC = () => {
   return (
     <section className="flex justify-center items-center h-screen ">
       <div className="absolute inset-0 bg-no-repeat bg-center  ">
-        <video className=" w-full h-full object-cover md:mt-2 " autoPlay loop muted>
+        <div className=" w-full h-full object-cover md:mt-2 bg-testBlue " >
           <source src="/img/video/blue.webm" type="video/mp4" />
           Tu navegador no soporta la etiqueta de video.
-        </video>
+        </div>
       </div>
-      <form className="relative form-login max-w-sm mx-auto bg-gradient-to-b from-testCian/45 via-testBlue/80 to-testBlue/20 rounded-xl p-8  mt-28 mb-6">
+      <form className="relative form-login max-w-sm mx-auto bg-gradient-to-b from-testCian/45 via-testBlue/80 to-testBlue/20 rounded-xl p-8 border border-gray-200  mt-28 mb-6">
         <div className="relative text-center mb-4 ">
           <Image
             className="mx-auto w-24 lg:w-40"
@@ -151,7 +151,7 @@ const Login: React.FC = () => {
             type="button"
             value="login"
             onClick={() => onSubmit()}
-            className=" text-white bg-testBlue/70 hover:bg-testBlue/30  focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center "
+            className=" text-white bg-testBlue/70 hover:bg-testBlue/30 border border-slate-300  focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center "
           >
             Iniciar Sesión
           </button>
