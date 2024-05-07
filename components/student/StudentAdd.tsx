@@ -78,7 +78,7 @@ const CreateStudentForm: React.FC<CreateStudentFormProps> = ({ onCloseModal, onC
     <Modal open={isCreateModalOpen} onClose={onCloseModal}>
     <div className="max-w-screen-lg mx-auto border p-4 rounded-xl">
       <h1 className='text-md text-center font-bold bg-testBlue text-gray-200 border p-2 rounded-lg mb-4 uppercase'>
-        Agregar estudiante
+        Agregar estudiante  
       </h1>
       <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-2 uppercase text-gray-600 md:grid-cols-2 gap-2">
     <div  className='flex justify-between col-span-2 whitespace-pre-wrap'>

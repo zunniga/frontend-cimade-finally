@@ -13,7 +13,7 @@ import "./styles.css";
 
 const Footer = () => {
   return (
-    <footer className="footer mt-96">
+    <footer className="footer ">
       
       <div className="border-b-2 border-white p-1 l  pt-2 pb-5">
         <div className="container mx-auto px-10">

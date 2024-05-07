@@ -105,7 +105,7 @@ const Login: React.FC = () => {
         <div className="relative text-center mb-4 ">
           <Image
             className="mx-auto w-24 lg:w-40"
-            src="/img/logo/logo_login.png"
+            src="/img/logo/logo_certificate1.png"
             alt="logo"
             width={120}
             height={120}

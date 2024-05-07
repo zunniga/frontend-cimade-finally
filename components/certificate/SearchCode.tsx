@@ -98,7 +98,7 @@ const SearchName:React.FC<SearchCodeProps> = ({ onSearchCode }) => {
       {studentData && (
         <Modal open={open} onClose={() => setOpen(false)}>
           <div className='flex justify-center mb-4 gap-4'>
-            <Image src={'/img/logo/logo_binexx.png'} alt='binex' className="lg:w-40 lg:h-32 w-36 h-28 mt-[42px] object-contain" width={800} height={800}  priority={true}/>
+            <Image src={'/img/logo/logo_certificate.png'} alt='binex' className="lg:w-44 lg:h-36 w-44 h-32 mt-[25px] object-contain" width={800} height={800}  priority={true}/>
             <Image src={'/img/certificate/unp.png'} alt='binex' className="lg:w-40 lg:h-40 w-36 h-36 mt-[18px] object-contain" width={800} height={800}  priority={true}/>
           </div>
           <div className="max-w-md mx-auto  bg-white rounded-md">

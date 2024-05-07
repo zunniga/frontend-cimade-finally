@@ -312,7 +312,7 @@ const Student = () => {
   };
 
   return (
-    <section className="p-2 mb-24 bg-black">
+    <section className="p-2 mb-96 bg-black" >
       {/* <div className="text-center text-gray-500 lg:p-6 text-2xl font-semibold mb-10 mt-8"> */}
 
       <div className="text-center text-white lg:p-6 p-0 mt-32 mb-10 text-2xl font-semibold ">

@@ -35,7 +35,7 @@ const Certificate: React.FC = () => {
       </div>
 
 
-      <div className="max-w-screen-lg mx-auto  rounded-3xl shadow-2xl  text-center lg:mb-20 p-4 relative inset-0 backdrop-blur-xl bg-gradient-to-b from-testCian/15 via-testCian/70 to-testCian/15">
+      <div className="max-w-screen-lg mx-auto  rounded-3xl shadow-2xl  text-center lg:mb-20 p-4 relative inset-0 backdrop-blur-xl bg-gradient-to-b from-testBlue/15 via-testBlue/70 to-testBlue/15">
         <div className="mb-4 lg:mt-0 justify-center text-5xl font-extrabold tracking-tight text-gray-500">
           <div className="flex justify-center mb-4 lg:gap-8 gap-8 ">
             <Image
@@ -47,7 +47,7 @@ const Certificate: React.FC = () => {
               priority={true}
             />
             <Image
-              src={"/img/logo/logo_login.png"}
+              src={"/img/logo/logo_certificate1.png"}
               className="lg:w-56 lg:h-56 w-48 h-48 object-contain "
               width={800}
               height={800}
@@ -62,7 +62,7 @@ const Certificate: React.FC = () => {
           </h2>
           <p className="font-semibold text-white sm:text-xl lg:px-36">
             En este módulo podrá realizar la búsqueda de certificados de los
-            diferentes eventos ofrecidos por BINEX.
+            diferentes eventos ofrecidos por Cimade.
           </p>
           <p className="mb-6 mt-6 lg:mt-10 text-xl tracking-tight font-semibold text-white">
             Buscar por:
