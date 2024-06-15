@@ -97,7 +97,7 @@ const ServiceArea = () => {
 
     return (   
         <>
-            <div className="tp-service-funfact-box flex flex-col md:flex-row justify-center items-center  bg-gradient-to-b from-intersting via-testCian/50 to-intersting pb- "> {/* Aplicamos flexbox para disposición horizontal y centrado vertical y horizontal */}
+            <div className="tp-service-funfact-box flex flex-col md:flex-row justify-center items-center  bg-gradient-to-b from-intersting via-intersting/70 to-intersting pb- "> {/* Aplicamos flexbox para disposición horizontal y centrado vertical y horizontal */}
    <section className="tp-fun-fact-area pt-60 pb-65 p-relative " >
       <div className="container container-1400">
 
@@ -142,7 +142,7 @@ const ServiceArea = () => {
                      </h3>
                      <p className='text-center'>
                         
-                        La importancia de la formación especializada se hace cada vez más evidente.<br />  
+                        La importancia de la formación especializada se hace cada vez más evidenter.<br />  
                         Las demandas de la sociedad y la industria requieren profesionales altamente capacitados y actualizados en las últimas tecnologías y metodologías.
                      </p>
                      
