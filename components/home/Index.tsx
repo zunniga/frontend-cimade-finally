@@ -26,7 +26,7 @@ const texts = [
 const tittles = [
 
   { tittle1: "DESCUBRE NUESTROS", color1: "text-white", tittle3: "CURSOS EN CIMADE", color3: "text-testCian"},
-  { tittle2: "¡CONSTRUYENDO", color2: "text-white", tittle3: "UN MUNDO MEJOR!", color3: "text-testCian"},
+  { tittle2: "¡CONSTRUYENDO", color2: "text-white", tittle3: "UN MUNDO MEJOR!!", color3: "text-testCian"},
   /* { tittle4: "DIPLOMADOS, CURSOS PROMÁS", color4: "from-green-700 to-blue-500" } */
 ];
 

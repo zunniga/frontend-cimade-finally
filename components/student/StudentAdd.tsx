@@ -76,29 +76,29 @@ const CreateStudentForm: React.FC<CreateStudentFormProps> = ({ onCloseModal, onC
 
   return (
     <Modal open={isCreateModalOpen} onClose={onCloseModal}>
-    <div className="max-w-screen-lg mx-auto border p-4 rounded-xl">
+    <div className="max-w-screen-2xl mx-auto border p-4 rounded-3xl">
       <h1 className='text-md text-center font-bold bg-testBlue text-gray-200 border p-2 rounded-lg mb-4 uppercase'>
-        Agregar estudiante  
+        Agregar estudiante 
       </h1>
       <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-2 uppercase text-gray-600 md:grid-cols-2 gap-2">
-    <div  className='flex justify-between col-span-2 whitespace-pre-wrap'>
-      <div className="mb-4">
-          <label className="text-sm font-bold">DNI: </label>
-          <input {...register('documentNumber', {required: true})}
-          className={`border bg-slate-200 text-slate-800 border-testCian rounded-lg p-1 lg:w-36 w-24 ${errors?.documentNumber ? 'border-testCian  ' : ''}`} />
+        <div className='flex justify-between col-span-2 whitespace-pre-wrap'>
+          <div className="mb-4">
+            <label className="text-sm font-bold">DNI: </label>
+            <input {...register('documentNumber', {required: true})}
+              className={`border bg-slate-200 text-slate-800 border-testCian rounded-lg p-1 lg:w-36 w-24 ${errors?.documentNumber ? 'border-testCian' : ''}`} />
             {errors?.documentNumber && (
               <span className="text-xs font-mono block text-red-400">{errors.documentNumber.message}</span>
             )}
+          </div>
+          <div className="mb-4">
+            <label className="text-sm font-bold">Código: </label>
+            <input {...register('code', {required: true})}
+              className={`border bg-slate-200 text-gray-950 border-testCian rounded-lg p-1 lg:w-32 w-28 ${errors?.code ? 'border-red-500' : ''}`} />
+            {errors?.code && (
+              <span className="text-sm lg:ml-4 font-mono block text-red-400">{errors.code.message}</span>
+            )}
+          </div>
         </div>
-        <div className="mb-4">
-          <label className="text-sm font-bold">Código: </label>
-          <input {...register('code', {required: true})}
-          className={`border bg-slate-200 text-gray-950 border-testCian rounded-lg p-1 lg:w-32 w-28 ${errors?.code ? 'border-red-500' : ''}`} />
-          {errors?.code && (
-            <span className="text-sm lg:ml-4 font-mono block text-red-400">{errors.code.message}</span>
-          )}
-        </div>
-    </div>
         <div className="mb-4 text-sm col-span-full md:col-span-2 lg:col-span-3">
           <label className="block font-bold">Nombres: </label>
           <input {...register('name', {required: true})} className="border text-gray-950 bg-slate-200 border-testCian rounded-lg p-2 w-full" />
@@ -115,20 +115,20 @@ const CreateStudentForm: React.FC<CreateStudentFormProps> = ({ onCloseModal, onC
           <label className="block font-bold">Instituto: </label>
           <input {...register('institute', {required: true})} className="border text-gray-950 bg-slate-200 border-testCian rounded-lg p-2 w-full" />
         </div>
-    <div className='flex justify-between col-span-2 whitespace-pre-wrap'>
-        <div className="mb-4">
-          <label className="text-sm font-bold">Hora/Creditos: </label>
-          <input {...register('hour', {required: true})}
-          className={`border bg-slate-200 text-gray-950 border-testCian rounded-lg p-1 lg:w-36 w-36 ${errors?.hour ? 'border-red-500' : ''}`} />
-          {errors?.hour && (
-            <span className="text-xs font-mono block text-red-400">{errors.hour.message}</span>
-          )}
+        <div className='flex justify-between col-span-2 whitespace-pre-wrap'>
+          <div className="mb-4">
+            <label className="text-sm font-bold">Hora/Creditos: </label>
+            <input {...register('hour', {required: true})}
+              className={`border bg-slate-200 text-gray-950 border-testCian rounded-lg p-1 lg:w-36 w-36 ${errors?.hour ? 'border-red-500' : ''}`} />
+            {errors?.hour && (
+              <span className="text-xs font-mono block text-red-400">{errors.hour.message}</span>
+            )}
+          </div>
+          <div className="mb-4 lg:ml-3">
+            <label className="text-sm font-bold">Fecha: </label>
+            <input {...register('date', {required: true})} className="border text-gray-950 bg-slate-200 border-testCian rounded-lg p-1 lg:w-44 w-36" />
+          </div>
         </div>
-        <div className="mb-4 lg:ml-3">
-          <label className="text-sm font-bold ">Fecha: </label>
-          <input {...register('date', {required: true})} className="border text-gray-950 bg-slate-200 border-testCian rounded-lg p-1 lg:w-44 w-36" />
-        </div>
-    </div>
         <div className="mb-4 text-xs col-span-full md:col-span-2">
           <label className="block font-bold">Imagen: </label>
           <input {...register('imageCertificate')} className="border bg-slate-200 border-testCian rounded-lg p-2 w-full" />
@@ -149,7 +149,8 @@ const CreateStudentForm: React.FC<CreateStudentFormProps> = ({ onCloseModal, onC
         </Modal>
       )}
     </div>
-    </Modal>
+  </Modal>
+  
   );
 };
 
